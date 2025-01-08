@@ -158,6 +158,8 @@ class _DataRouteState extends State<DataRoute> {
           TeleoperatedValues.algaeRemoved.text = "0";
           TeleoperatedValues.algaeProcessor.text = "0";
           TeleoperatedValues.algaeBarge.text = "0";
+          TeleoperatedValues.humanPlayerMisses.text = "0";
+          TeleoperatedValues.fieldCrosses.text = "0";
           AutonomousValues.autoMobility.text = "No";
           EndgameValues.endgame.text = "No"; // was climb, now endgame
           EndgameValues.climbTime.text = "0"; // parked was below
