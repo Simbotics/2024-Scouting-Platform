@@ -72,19 +72,19 @@ class QrcodeHelper {
   /// Computes all endgame values and returns them as a single string separated by a caret
   static String computeEndgameValues() {
     return computeValues([
-      parseString(EndgameValues.endgame.text), // index: 14
-      parseString(EndgameValues.climbTime.text), // index: 15
-      parseInt(EndgameValues.trap.text) // index: 16
+      parseString(EndgameValues.endgame.text), // index: 19
+      parseString(EndgameValues.climbTime.text), // index: 20
+      parseInt(EndgameValues.trap.text) // index: 21
     ]);
   }
 
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      parseString(CommentValues.autoComments.text), // index: 17
-      parseString(CommentValues.autoOrder.text), // index: 18
-      parseString(CommentValues.teleopComments.text), // index: 19
-      parseString(CommentValues.endgameComments.text) // index: 20
+      parseString(CommentValues.autoComments.text), // index: 22
+      parseString(CommentValues.autoOrder.text), // index: 23
+      parseString(CommentValues.teleopComments.text), // index: 24
+      parseString(CommentValues.endgameComments.text) // index: 25
     ]);
   }
 
@@ -93,7 +93,7 @@ class QrcodeHelper {
     return computeValues([
       parseString(OptionConstants.availableDriverstations
           .indexOf(SettingValues.selectedDriverStation.text)
-          .toString()) // index: 21
+          .toString()) // index: 26
     ]);
   }
 
