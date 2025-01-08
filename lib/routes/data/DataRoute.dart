@@ -4,9 +4,11 @@ import 'package:scouting_platform/builders/PlatformRoute.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousFields.dart';
 import 'package:scouting_platform/routes/data/fields/TeleoperatedFields.dart';
+import 'package:scouting_platform/routes/data/fields/TeleoperatedFields2.dart';
 import 'package:scouting_platform/routes/data/fields/EndgameFields.dart';
 import 'package:scouting_platform/routes/data/labels/AutonomousLabels.dart';
 import 'package:scouting_platform/routes/data/labels/TeleoperatedLabels.dart';
+import 'package:scouting_platform/routes/data/labels/TeleoperatedLabels2.dart';
 import 'package:scouting_platform/routes/data/labels/EndgameLabels.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
 import 'package:scouting_platform/styles/components/TitleStyle.dart';
@@ -98,6 +100,8 @@ class _DataRouteState extends State<DataRoute> {
               padding: EdgeInsets.only(top: 20.0, left: 20.0)),
           const TeleoperatedLabels(),
           const TeleoperatedFields(),
+          const TeleoperatedLabels2(),
+          const TeleoperatedFields2(),
           const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -146,15 +150,18 @@ class _DataRouteState extends State<DataRoute> {
           AutonomousValues.autoSpeakerMissed.text = "0";
           AutonomousValues.autoAmpMissed.text = "0";
           AutonomousValues.autoAmpScored.text = "0";
-          TeleoperatedValues.speaker.text = "0";
-          TeleoperatedValues.speakerMissed.text = "0";
-          TeleoperatedValues.amp.text = "0";
-          TeleoperatedValues.ampMissed.text = "0";
+          TeleoperatedValues.coralL1.text = "0";
+          TeleoperatedValues.coralL2.text = "0";
+          TeleoperatedValues.coralL3.text = "0";
+          TeleoperatedValues.coralL4.text = "0";
+          TeleoperatedValues.coralMissed.text = "0";
+          TeleoperatedValues.algaeRemoved.text = "0";
+          TeleoperatedValues.algaeProcessor.text = "0";
+          TeleoperatedValues.algaeBarge.text = "0";
           AutonomousValues.autoMobility.text = "No";
           EndgameValues.endgame.text = "No"; // was climb, now endgame
           EndgameValues.climbTime.text = "0"; // parked was below
           EndgameValues.stopwatchState.text = "0";
-          TeleoperatedValues.passes.text = "0";
           EndgameValues.trap.text = "0";
           EndgameValues.stopwatch.stop();
           EndgameValues.stopwatch.reset();

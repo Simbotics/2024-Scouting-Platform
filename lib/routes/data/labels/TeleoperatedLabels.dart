@@ -15,7 +15,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        //Speaker Scored
+        //coral l1
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -25,7 +25,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                 top: 20.0,
               ),
               child: const Text(
-                "Speaker Scored",
+                "Coral L1 Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -33,14 +33,14 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //speaker missed
+        //coral l2
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
               padding: const EdgeInsets.only(left: 20.0, top: 20.0),
               child: const Text(
-                "Speaker Missed",
+                "Coral L2 Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -48,14 +48,14 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //amp scored
+        //coral l3
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
               padding: const EdgeInsets.only(left: 20.0, top: 20.0),
               child: const Text(
-                "Amp Scored",
+                "Coral L3 Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -63,7 +63,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-        // Amp missed
+        // coral l4
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -71,7 +71,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
               padding:
                   const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Amp Missed",
+                "Coral L4 Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -79,7 +79,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-        // Passes
+        // coral missed
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -87,7 +87,38 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
               padding:
                   const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Passes",
+                "Coral Missed",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0),
+              ),
+            )),
+        // algae removed
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              width: 170.0,
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
+              child: const Text(
+                "Algae Removed",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0),
+              ),
+            )),
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              width: 170.0,
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
+              child: const Text(
+                "Algae Processor",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,

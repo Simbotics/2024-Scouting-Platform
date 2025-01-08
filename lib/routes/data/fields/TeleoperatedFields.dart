@@ -39,34 +39,47 @@ class _TeleoperatedFieldsState extends State<TeleoperatedFields> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        //speaker scored
+        //coral l1 scored
         CounterNumberField(
-            controller: TeleoperatedValues.speaker,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.speaker),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.speaker)),
-        //speaker missed
+            controller: TeleoperatedValues.coralL1,
+            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL1),
+            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL1)),
+        //coral l2 scored
         CounterNumberField(
-            controller: TeleoperatedValues.speakerMissed,
+            controller: TeleoperatedValues.coralL2,
+            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL2),
+            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL2)),
+        //coral l3 scored
+        CounterNumberField(
+            controller: TeleoperatedValues.coralL3,
+            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL3),
+            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL3)),
+        //coral l4 scored
+        CounterNumberField(
+            controller: TeleoperatedValues.coralL4,
+            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL4),
+            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL4)),
+        //coral missed
+        CounterNumberField(
+            controller: TeleoperatedValues.coralMissed,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.speakerMissed),
+                decrementNumber(TeleoperatedValues.coralMissed),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.speakerMissed)),
-        //amp scored
+                incrementNumber(TeleoperatedValues.coralMissed)),
+        //algae removed
         CounterNumberField(
-            controller: TeleoperatedValues.amp,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.amp),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.amp)),
-        //amp missed
-        CounterNumberField(
-            controller: TeleoperatedValues.ampMissed,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.ampMissed),
+            controller: TeleoperatedValues.algaeRemoved,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.algaeRemoved),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.ampMissed)),
-        //passes
+                incrementNumber(TeleoperatedValues.algaeRemoved)),
+        //algae processor
         CounterNumberField(
-            controller: TeleoperatedValues.passes,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.passes),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.passes)),
+            controller: TeleoperatedValues.algaeProcessor,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.algaeProcessor),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.algaeProcessor)),
       ],
     );
   }
