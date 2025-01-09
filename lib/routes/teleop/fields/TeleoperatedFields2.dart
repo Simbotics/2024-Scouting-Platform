@@ -39,6 +39,30 @@ class _TeleoperatedFields2State extends State<TeleoperatedFields2> {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        CounterNumberField(
+            controller: TeleoperatedValues.coralFarL1,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralFarL1),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralFarL1)),
+        CounterNumberField(
+            controller: TeleoperatedValues.coralFarL2,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralFarL2),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralFarL2)),
+        CounterNumberField(
+            controller: TeleoperatedValues.coralFarL3,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralFarL3),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralFarL3)),
+        CounterNumberField(
+            controller: TeleoperatedValues.coralFarL4,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralFarL4),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralFarL4)),
         //algae barge
         CounterNumberField(
             controller: TeleoperatedValues.algaeBarge,
@@ -46,14 +70,14 @@ class _TeleoperatedFields2State extends State<TeleoperatedFields2> {
                 decrementNumber(TeleoperatedValues.algaeBarge),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.algaeBarge)),
-                        //algae barge
+        //algae barge
         CounterNumberField(
             controller: TeleoperatedValues.humanPlayerMisses,
             onTapDecrement: () =>
                 decrementNumber(TeleoperatedValues.humanPlayerMisses),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.humanPlayerMisses)),
-                        //algae barge
+        //algae barge
         CounterNumberField(
             controller: TeleoperatedValues.fieldCrosses,
             onTapDecrement: () =>

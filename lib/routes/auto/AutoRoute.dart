@@ -1,16 +1,10 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/PlatformRoute.dart';
-import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousFields.dart';
-import 'package:scouting_platform/routes/data/fields/TeleoperatedFields.dart';
-import 'package:scouting_platform/routes/data/fields/TeleoperatedFields2.dart';
-import 'package:scouting_platform/routes/data/fields/EndgameFields.dart';
-import 'package:scouting_platform/routes/data/labels/AutonomousLabels.dart';
-import 'package:scouting_platform/routes/data/labels/TeleoperatedLabels.dart';
-import 'package:scouting_platform/routes/data/labels/TeleoperatedLabels2.dart';
-import 'package:scouting_platform/routes/data/labels/EndgameLabels.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousFields.dart';
+import 'package:scouting_platform/routes/auto/labels/AutonomousLabels.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
+import 'package:scouting_platform/routes/teleop/TeleopRoute.dart';
 import 'package:scouting_platform/styles/components/TitleStyle.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
@@ -22,15 +16,15 @@ import 'package:scouting_platform/utils/data/values/SettingValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
 
-class DataRoute extends StatefulWidget {
-  const DataRoute({super.key, required this.title});
+class AutoRoute extends StatefulWidget {
+  const AutoRoute({super.key, required this.title});
   final String title;
 
   @override
-  State<DataRoute> createState() => _DataRouteState();
+  State<AutoRoute> createState() => _AutoRouteState();
 }
 
-class _DataRouteState extends State<DataRoute> {
+class _AutoRouteState extends State<AutoRoute> {
   @override
   void initState() {
     super.initState();
@@ -82,10 +76,10 @@ class _DataRouteState extends State<DataRoute> {
                         onPressed: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
-                            return const CommentsRoute(title: "Comments");
+                            return const TeleopRoute(title: "Teleop/Endgame");
                           }));
                         },
-                        child: const Text("Comments >",
+                        child: const Text("Teleop/Endgame >",
                             style: TextStyle(
                                 fontSize: 16.0,
                                 fontFamily: "Helvetica",
@@ -95,23 +89,6 @@ class _DataRouteState extends State<DataRoute> {
           ),
           const AutonomousLabels(),
           const AutonomousFields(),
-          const TitleStyle(
-              text: "Teleop Data",
-              padding: EdgeInsets.only(top: 20.0, left: 20.0)),
-          const TeleoperatedLabels(),
-          const TeleoperatedFields(),
-          const TeleoperatedLabels2(),
-          const TeleoperatedFields2(),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TitleStyle(
-                  text: "Endgame Data",
-                  padding: EdgeInsets.only(top: 20.0, left: 20.0)),
-            ],
-          ),
-          const EndgameLabels(),
-          const EndgameFields(),
         ]),
       ),
     );
@@ -150,10 +127,14 @@ class _DataRouteState extends State<DataRoute> {
           AutonomousValues.autoSpeakerMissed.text = "0";
           AutonomousValues.autoAmpMissed.text = "0";
           AutonomousValues.autoAmpScored.text = "0";
-          TeleoperatedValues.coralL1.text = "0";
-          TeleoperatedValues.coralL2.text = "0";
-          TeleoperatedValues.coralL3.text = "0";
-          TeleoperatedValues.coralL4.text = "0";
+          TeleoperatedValues.coralNearL1.text = "0";
+          TeleoperatedValues.coralNearL2.text = "0";
+          TeleoperatedValues.coralNearL3.text = "0";
+          TeleoperatedValues.coralNearL4.text = "0";
+          TeleoperatedValues.coralFarL1.text = "0";
+          TeleoperatedValues.coralFarL2.text = "0";
+          TeleoperatedValues.coralFarL3.text = "0";
+          TeleoperatedValues.coralFarL4.text = "0";
           TeleoperatedValues.coralMissed.text = "0";
           TeleoperatedValues.algaeRemoved.text = "0";
           TeleoperatedValues.algaeProcessor.text = "0";

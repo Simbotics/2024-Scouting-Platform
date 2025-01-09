@@ -55,17 +55,20 @@ class QrcodeHelper {
   /// Computes all teleoperated values and returns them as a single string separated by a caret
   static String computeTeleopValues() {
     return computeValues([
-      parseInt(TeleoperatedValues.coralL1.text),            // index: 9
-      parseInt(TeleoperatedValues.coralL2.text),            // index: 10
-      parseInt(TeleoperatedValues.coralL3.text),            // index: 11
-      parseInt(TeleoperatedValues.coralL4.text),            // index: 12
-      parseInt(TeleoperatedValues.coralMissed.text),        // index: 13
-      parseInt(TeleoperatedValues.algaeRemoved.text),       // index: 14
-      parseInt(TeleoperatedValues.algaeProcessor.text),     // index: 15
-      parseInt(TeleoperatedValues.algaeBarge.text),         // index: 16
-      parseInt(TeleoperatedValues.humanPlayerMisses.text),  // index: 17
-      parseInt(TeleoperatedValues.fieldCrosses.text),       // index: 18
-
+      parseInt(TeleoperatedValues.coralNearL1.text), // index: 9
+      parseInt(TeleoperatedValues.coralNearL2.text), // index: 10
+      parseInt(TeleoperatedValues.coralNearL3.text), // index: 11
+      parseInt(TeleoperatedValues.coralNearL4.text), // index: 12
+      parseInt(TeleoperatedValues.coralFarL1.text), // index: 9
+      parseInt(TeleoperatedValues.coralFarL2.text), // index: 10
+      parseInt(TeleoperatedValues.coralFarL3.text), // index: 11
+      parseInt(TeleoperatedValues.coralFarL4.text), // index: 12
+      parseInt(TeleoperatedValues.coralMissed.text), // index: 13
+      parseInt(TeleoperatedValues.algaeRemoved.text), // index: 14
+      parseInt(TeleoperatedValues.algaeProcessor.text), // index: 15
+      parseInt(TeleoperatedValues.algaeBarge.text), // index: 16
+      parseInt(TeleoperatedValues.humanPlayerMisses.text), // index: 17
+      parseInt(TeleoperatedValues.fieldCrosses.text), // index: 18
     ]);
   }
 

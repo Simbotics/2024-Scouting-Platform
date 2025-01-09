@@ -41,24 +41,32 @@ class _TeleoperatedFieldsState extends State<TeleoperatedFields> {
       children: [
         //coral l1 scored
         CounterNumberField(
-            controller: TeleoperatedValues.coralL1,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL1),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL1)),
+            controller: TeleoperatedValues.coralNearL1,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralNearL1),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralNearL1)),
         //coral l2 scored
         CounterNumberField(
-            controller: TeleoperatedValues.coralL2,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL2),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL2)),
+            controller: TeleoperatedValues.coralNearL2,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralNearL2),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralNearL2)),
         //coral l3 scored
         CounterNumberField(
-            controller: TeleoperatedValues.coralL3,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL3),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL3)),
+            controller: TeleoperatedValues.coralNearL3,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralNearL3),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralNearL3)),
         //coral l4 scored
         CounterNumberField(
-            controller: TeleoperatedValues.coralL4,
-            onTapDecrement: () => decrementNumber(TeleoperatedValues.coralL4),
-            onTapIncrement: () => incrementNumber(TeleoperatedValues.coralL4)),
+            controller: TeleoperatedValues.coralNearL4,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralNearL4),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralNearL4)),
         //coral missed
         CounterNumberField(
             controller: TeleoperatedValues.coralMissed,

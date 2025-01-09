@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:scouting_platform/components/navigation/components/SidebarItem.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
-import 'package:scouting_platform/routes/data/DataRoute.dart';
+import 'package:scouting_platform/routes/auto/AutoRoute.dart';
 import 'package:scouting_platform/routes/qrcode/QRCodeRoute.dart';
 import 'package:scouting_platform/routes/settings/SettingsRoute.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
+import 'package:scouting_platform/routes/teleop/TeleopRoute.dart';
 
 class NavigationSidebar extends StatelessWidget {
   const NavigationSidebar({super.key});
@@ -32,9 +33,13 @@ class NavigationSidebar extends StatelessWidget {
               itemName: "Prematch Data",
               route: PrematchRoute(title: 'Prematch Data')),
           const SidebarItem(
-              icon: Icon(Icons.draw),
-              itemName: "Data Input",
-              route: DataRoute(title: 'Data Input')),
+              icon: Icon(Icons.auto_awesome),
+              itemName: "Auto Data",
+              route: AutoRoute(title: 'Auto Input')),
+          const SidebarItem(
+              icon: Icon(Icons.gamepad),
+              itemName: "Teleop Data",
+              route: TeleopRoute(title: 'Teleop Input')),
           const SidebarItem(
               icon: Icon(Icons.chat_bubble),
               itemName: "Comments",
