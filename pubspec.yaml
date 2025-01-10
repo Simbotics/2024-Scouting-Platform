@@ -3,7 +3,7 @@ description: A scouting platform app designed to track FRC robot performance.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -29,7 +29,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -64,11 +63,15 @@ flutter_launcher_icons:
 # The following section is specific to Flutter.
 flutter:
   assets:
-  # App icons, banners, and logos
+    # App icons, banners, and logos
     - assets/images/app_icon.png
     - assets/images/nav_banner.png
     - assets/images/simbotics_logo.png
-  # QR code centerfolds
+    # Reefscape diagram
+    - assets/images/reefscape/karthik-reef-diagram-top.png
+    - assets/images/reefscape/karthik-reef-diagram-middle.png
+    - assets/images/reefscape/karthik-reef-diagram-bottom.png
+    # QR code centerfolds
     - assets/images/centerfolds/jqr_code_centerfold.png
     - assets/images/centerfolds/jimmy_centerfold.png
     - assets/images/centerfolds/peppa_pig_centerfold.png

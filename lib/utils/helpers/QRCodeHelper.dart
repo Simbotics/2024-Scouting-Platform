@@ -44,11 +44,15 @@ class QrcodeHelper {
   /// Computes all autonomous values and returns them as a single string separated by a caret
   static String computeAutonomousValues() {
     return computeValues([
-      parseInt(AutonomousValues.autoSpeakerScored.text), // index: 4
-      parseInt(AutonomousValues.autoSpeakerMissed.text), // index: 5
-      parseInt(AutonomousValues.autoAmpScored.text), // index: 6
-      parseInt(AutonomousValues.autoAmpMissed.text), // index: 7
-      parseString(AutonomousValues.autoMobility.text) // index: 8
+      // L1 Coral Values
+      parseInt(AutonomousValues.l1NW.text),
+      parseInt(AutonomousValues.l1NE.text),
+      parseInt(AutonomousValues.l1W.text),
+      parseInt(AutonomousValues.l1E.text),
+      parseInt(AutonomousValues.l1SW.text),
+      parseInt(AutonomousValues.l1SE.text),
+
+      // L2 Coral Values
     ]);
   }
 
