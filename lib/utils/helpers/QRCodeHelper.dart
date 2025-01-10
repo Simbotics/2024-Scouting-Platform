@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 import 'dart:convert';
 
+import 'package:remove_emoji/remove_emoji.dart';
 import 'package:scouting_platform/utils/data/constants/AppConstants.dart';
 import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
@@ -75,10 +76,11 @@ class QrcodeHelper {
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      parseString(CommentValues.autoComments.text), // index: 17
-      parseString(CommentValues.autoOrder.text), // index: 18
-      parseString(CommentValues.teleopComments.text), // index: 19
-      parseString(CommentValues.endgameComments.text) // index: 20
+      // I know this says remov and not remove, but this is correct
+      parseString(CommentValues.autoComments.text.removEmoji), // index: 17
+      parseString(CommentValues.autoOrder.text.removEmoji), // index: 18
+      parseString(CommentValues.teleopComments.text.removEmoji), // index: 19
+      parseString(CommentValues.endgameComments.text.removEmoji) // index: 20
     ]);
   }
 
