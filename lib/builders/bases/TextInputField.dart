@@ -58,6 +58,7 @@ class _TextInputFieldState extends State<TextInputField> {
         maxLines: widget.maxLines,
         controller: widget.controller,
         textAlign: widget.textAlign,
+        keyboardType: TextInputType.visiblePassword,
         style: TextStyle(
           color: textColor,
           fontSize: widget.textInputFontSize,
