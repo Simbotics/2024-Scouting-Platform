@@ -76,7 +76,6 @@ class QrcodeHelper {
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      // I know this says remov and not remove, but this is correct
       parseString(CommentValues.autoComments.text.removEmoji), // index: 17
       parseString(CommentValues.autoOrder.text.removEmoji), // index: 18
       parseString(CommentValues.teleopComments.text.removEmoji), // index: 19
