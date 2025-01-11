@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
-import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
-import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
 
 class AutonomousRightRow2 extends StatefulWidget {
@@ -44,6 +42,7 @@ class _AutonomousRightRow2State extends State<AutonomousRightRow2> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start, // Center the row contents
         children: [
+          // Coral missed counter
           CounterNumberField(
               margin: EdgeInsets.zero,
               controller: AutonomousValues.coralMissed,
@@ -51,6 +50,7 @@ class _AutonomousRightRow2State extends State<AutonomousRightRow2> {
                   incrementNumber(AutonomousValues.coralMissed),
               onTapDecrement: () =>
                   decrementNumber(AutonomousValues.coralMissed)),
+          // Coral form field counter
           CounterNumberField(
               margin: EdgeInsets.only(left: 10),
               controller: AutonomousValues.coralField,
@@ -58,6 +58,7 @@ class _AutonomousRightRow2State extends State<AutonomousRightRow2> {
                   incrementNumber(AutonomousValues.coralField),
               onTapDecrement: () =>
                   decrementNumber(AutonomousValues.coralField)),
+          // Coral from human player / coral station counter
           CounterNumberField(
               margin: EdgeInsets.only(left: 10),
               controller: AutonomousValues.coralHP,

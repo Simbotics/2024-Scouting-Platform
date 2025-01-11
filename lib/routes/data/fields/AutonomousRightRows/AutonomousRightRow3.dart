@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
-import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
-import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
 
 class AutonomousRightRow3 extends StatefulWidget {
@@ -44,6 +42,7 @@ class _AutonomousRightRow3State extends State<AutonomousRightRow3> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start, // Center the row contents
         children: [
+          // Algae removed from reef counter
           CounterNumberField(
               margin: EdgeInsets.zero,
               controller: AutonomousValues.algaeRemoved,
@@ -51,6 +50,7 @@ class _AutonomousRightRow3State extends State<AutonomousRightRow3> {
                   incrementNumber(AutonomousValues.algaeRemoved),
               onTapDecrement: () =>
                   decrementNumber(AutonomousValues.algaeRemoved)),
+          // Algae scored in processor counter
           CounterNumberField(
               margin: EdgeInsets.only(left: 10),
               controller: AutonomousValues.algaeProcessor,
@@ -58,11 +58,14 @@ class _AutonomousRightRow3State extends State<AutonomousRightRow3> {
                   incrementNumber(AutonomousValues.algaeProcessor),
               onTapDecrement: () =>
                   decrementNumber(AutonomousValues.algaeProcessor)),
+          // Algae scored in barge counter
           CounterNumberField(
               margin: EdgeInsets.only(left: 10),
               controller: AutonomousValues.algaeBarge,
-              onTapIncrement: () => incrementNumber(AutonomousValues.algaeBarge),
-              onTapDecrement: () => decrementNumber(AutonomousValues.algaeBarge)),
+              onTapIncrement: () =>
+                  incrementNumber(AutonomousValues.algaeBarge),
+              onTapDecrement: () =>
+                  decrementNumber(AutonomousValues.algaeBarge)),
         ],
       ),
     );

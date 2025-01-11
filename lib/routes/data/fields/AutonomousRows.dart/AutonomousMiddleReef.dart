@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
-import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
-import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
 
 class AutonomousMiddleReef extends StatefulWidget {
@@ -51,11 +49,13 @@ class _AutonomousRow1State extends State<AutonomousMiddleReef> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center, // Center the row contents
         children: [
+          // left side trough counter
           CounterNumberField(
               margin: EdgeInsets.only(right: 100.0, bottom: 0.0),
               controller: AutonomousValues.l1W,
               onTapDecrement: () => decrementNumber(AutonomousValues.l1W),
               onTapIncrement: () => incrementNumber(AutonomousValues.l1W)),
+          // right side trough counter
           CounterNumberField(
               margin: EdgeInsets.only(right: 0.0, top: 0.0),
               controller: AutonomousValues.l1E,

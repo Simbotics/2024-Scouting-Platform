@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
 import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
 import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
@@ -63,7 +62,6 @@ class _AutonomousRightRow1State extends State<AutonomousRightRow1> {
               },
               dropdownItems: OptionConstants.yesNoOptions,
               margin: const EdgeInsets.only(left: 10)),
-          
         ],
       ),
     );

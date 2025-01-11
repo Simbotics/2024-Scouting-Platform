@@ -27,7 +27,6 @@ import 'package:scouting_platform/utils/data/values/SettingValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousTopReef.dart';
-import 'package:scouting_platform/styles/components/TitleStyle.dart';
 
 class AutonomousDataRoute extends StatefulWidget {
   const AutonomousDataRoute({super.key, required this.title});
@@ -62,12 +61,18 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // all components of reef diagram
+                    // top check boxes
                     const AutonomousRow1(),
                     const AutonomousRow2(),
                     const AutonomousRow3(),
+
+                    // thirds of the reef diagram with counters for trough
                     const AutonomousTopReef(),
                     const AutonomousMiddleReef(),
                     const AutonomousBottomReef(),
+
+                    // bottom check boxes
                     const AutonomousRow4(),
                     const AutonomousRow5(),
                     const AutonomousRow6(),
@@ -90,6 +95,8 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                         SizedBox(
                           width: 120.0,
                         ),
+
+                        // reset button
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             minimumSize: const Size(150.0, 37.0),
@@ -107,7 +114,10 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                             ),
                           ),
                         ),
+
                         const SizedBox(width: 16.0),
+
+                        // next page button
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             minimumSize: const Size(150.0, 37.0),
@@ -130,6 +140,7 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                         ),
                       ],
                     ),
+                    // various right side data entry and labels
                     const AutonomousRightLabel1(),
                     const AutonomousRightRow1(),
                     const AutonomousRightLabel2(),

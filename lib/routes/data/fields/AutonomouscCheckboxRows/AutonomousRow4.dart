@@ -42,42 +42,42 @@ class _AutonomousRow4State extends State<AutonomousRow4> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start, // Center the row contents
         children: [
-          // A
+          // B
           CustomCheckbox(
               controller: AutonomousValues.l4B,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 18.0)),
-          // L
+          // C
           CustomCheckbox(
               controller: AutonomousValues.l4C,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 35.0)),
-          // K
+          // D
           CustomCheckbox(
               controller: AutonomousValues.l4D,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 35.0)),
-          // J
+          // E
           CustomCheckbox(
               controller: AutonomousValues.l4E,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 30.0)),
-          // I
+          // F
           CustomCheckbox(
               controller: AutonomousValues.l4F,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 25.0)),
-          // H
+          // G
           CustomCheckbox(
               controller: AutonomousValues.l4G,
               backgroundColor: Colors.grey.shade800,
