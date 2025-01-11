@@ -15,6 +15,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
+        // coral l1 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -30,6 +31,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
                     fontSize: 15.0),
               ),
             )),
+        // coral l2 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -45,6 +47,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
                     fontSize: 15.0),
               ),
             )),
+        // coral l3 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -60,6 +63,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
                     fontSize: 15.0),
               ),
             )),
+        // coral l4 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -75,6 +79,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
                     fontSize: 15.0),
               ),
             )),
+        // algae barge
         Align(
             alignment: Alignment.centerLeft,
             child: Container(

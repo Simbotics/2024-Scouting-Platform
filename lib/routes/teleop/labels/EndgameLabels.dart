@@ -15,7 +15,7 @@ class _EndgameLabelsState extends State<EndgameLabels> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        //hanging?
+        //climbing
         Align(
             alignment: Alignment.centerLeft,
             child: Container(

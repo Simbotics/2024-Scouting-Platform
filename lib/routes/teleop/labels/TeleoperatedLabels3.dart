@@ -31,6 +31,7 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
+        // algae processor
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -46,6 +47,7 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
+        // human player misses
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -61,6 +63,7 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
+        // field crosses
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
