@@ -38,7 +38,7 @@ class _AutonomousRow6State extends State<AutonomousRow6> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(),
-      height: 50, // Set a height for the container
+      height: 40, // Set a height for the container
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start, // Center the row contents
         children: [
@@ -48,35 +48,35 @@ class _AutonomousRow6State extends State<AutonomousRow6> {
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
-              margin: const EdgeInsets.only(right: 75.0)),
+              margin: const EdgeInsets.only(right: 18.0)),
           // C
           CustomCheckbox(
               controller: AutonomousValues.l2C,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
-              margin: const EdgeInsets.only(right: 75.0)),
+              margin: const EdgeInsets.only(right: 35.0)),
           // D
           CustomCheckbox(
               controller: AutonomousValues.l2D,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
-              margin: const EdgeInsets.only(right: 80.0)),
+              margin: const EdgeInsets.only(right: 35.0)),
           // E
           CustomCheckbox(
               controller: AutonomousValues.l2E,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
-              margin: const EdgeInsets.only(right: 75.0)),
+              margin: const EdgeInsets.only(right: 30.0)),
           // F
           CustomCheckbox(
               controller: AutonomousValues.l2F,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
-              margin: const EdgeInsets.only(right: 78.0)),
+              margin: const EdgeInsets.only(right: 25.0)),
           // G
           CustomCheckbox(
               controller: AutonomousValues.l2G,

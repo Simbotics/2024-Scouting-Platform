@@ -46,17 +46,18 @@ class _AutonomousRow1State extends State<AutonomousBottomReef> {
           fit: BoxFit.cover,
         ),
       ),
-      height: 130, // Set a height for the container
+      height: 95,
+      width: 440,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center, // Center the row contents
         children: [
           CounterNumberField(
-              margin: EdgeInsets.only(right: 50.0, bottom: 40.0),
+              margin: EdgeInsets.only(right: 55.0, bottom: 0.0, left: 10.0),
               controller: AutonomousValues.l1SW,
               onTapDecrement: () => decrementNumber(AutonomousValues.l1SW),
               onTapIncrement: () => incrementNumber(AutonomousValues.l1SW)),
           CounterNumberField(
-              margin: EdgeInsets.only(right: 0.0, bottom: 40.0),
+              margin: EdgeInsets.only(right: 0.0, bottom: 0.0),
               controller: AutonomousValues.l1SE,
               onTapDecrement: () => decrementNumber(AutonomousValues.l1SE),
               onTapIncrement: () => incrementNumber(AutonomousValues.l1SE)),

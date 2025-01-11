@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:scouting_platform/components/navigation/components/SidebarItem.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
-import 'package:scouting_platform/routes/data/DataRoute.dart';
 import 'package:scouting_platform/routes/data/AutonomousDataRoute.dart';
 import 'package:scouting_platform/routes/qrcode/QRCodeRoute.dart';
 import 'package:scouting_platform/routes/settings/SettingsRoute.dart';
@@ -36,10 +35,6 @@ class NavigationSidebar extends StatelessWidget {
               icon: Icon(Icons.fast_forward),
               itemName: "Auto Input",
               route: AutonomousDataRoute(title: "Auto Data Input")),
-          const SidebarItem(
-              icon: Icon(Icons.draw),
-              itemName: "Data Input",
-              route: DataRoute(title: 'Data Input')),
           const SidebarItem(
               icon: Icon(Icons.chat_bubble),
               itemName: "Comments",

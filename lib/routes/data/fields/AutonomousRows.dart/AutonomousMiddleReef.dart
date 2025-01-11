@@ -42,16 +42,17 @@ class _AutonomousRow1State extends State<AutonomousMiddleReef> {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-              'assets/images/reefscape/karthik-reef-diagram-middle.png'), // Replace with your image path
+              'assets/images/reefscape/karthik-reef-diagram-middle-compressed.png'), // Replace with your image path
           fit: BoxFit.cover,
         ),
       ),
-      height: 100, // Set a height for the container
+      height: 50,
+      width: 440,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center, // Center the row contents
         children: [
           CounterNumberField(
-              margin: EdgeInsets.only(right: 250.0, top: 0.0),
+              margin: EdgeInsets.only(right: 100.0, bottom: 0.0),
               controller: AutonomousValues.l1W,
               onTapDecrement: () => decrementNumber(AutonomousValues.l1W),
               onTapIncrement: () => incrementNumber(AutonomousValues.l1W)),

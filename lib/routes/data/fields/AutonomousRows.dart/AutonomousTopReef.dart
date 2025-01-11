@@ -46,19 +46,20 @@ class _AutonomousRow1State extends State<AutonomousTopReef> {
           fit: BoxFit.cover,
         ),
       ),
-      height: 130, // Set a height for the container
+      height: 95,
+      width: 440,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center, // Center the row contents
         children: [
           // North West (Top Left) trough counter
           CounterNumberField(
-              margin: EdgeInsets.only(right: 50.0, top: 50.0, left: 100.0),
+              margin: EdgeInsets.only(right: 50.0, bottom: 20.0, left: 45.0),
               controller: AutonomousValues.l1NW,
               onTapDecrement: () => decrementNumber(AutonomousValues.l1NW),
               onTapIncrement: () => incrementNumber(AutonomousValues.l1NW)),
           // North East (Top Right) trough counter
           CounterNumberField(
-              margin: EdgeInsets.only(right: 100.0, top: 50.0),
+              margin: EdgeInsets.only(right: 40.0, bottom: 20.0),
               controller: AutonomousValues.l1NE,
               onTapDecrement: () => decrementNumber(AutonomousValues.l1NE),
               onTapIncrement: () => incrementNumber(AutonomousValues.l1NE)),

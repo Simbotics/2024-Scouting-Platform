@@ -4,16 +4,16 @@ import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
 import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
 
-class AutonomousRightRow1 extends StatefulWidget {
-  const AutonomousRightRow1({
+class AutonomousRightRow3 extends StatefulWidget {
+  const AutonomousRightRow3({
     super.key,
   });
 
   @override
-  State<AutonomousRightRow1> createState() => _AutonomousRightRow1State();
+  State<AutonomousRightRow3> createState() => _AutonomousRightRow3State();
 }
 
-class _AutonomousRightRow1State extends State<AutonomousRightRow1> {
+class _AutonomousRightRow3State extends State<AutonomousRightRow3> {
   /// Increments an integer in a controller's value by one
   void incrementNumber(TextEditingController controller) {
     if (!mounted) return;
@@ -44,26 +44,25 @@ class _AutonomousRightRow1State extends State<AutonomousRightRow1> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start, // Center the row contents
         children: [
-          // Auto starting position
-          PlatformDropdownMenu(
-              dropdownMenuSelectedItem: AutonomousValues.autoStartPosition.text,
-              onChanged: (value) {
-                setState(() {
-                  AutonomousValues.autoStartPosition.text = value;
-                });
-              },
-              dropdownItems: OptionConstants.startPositions),
-          // Auto mobility
-          PlatformDropdownMenu(
-              dropdownMenuSelectedItem: AutonomousValues.autoMobility.text,
-              onChanged: (value) {
-                setState(() {
-                  AutonomousValues.autoMobility.text = value;
-                });
-              },
-              dropdownItems: OptionConstants.yesNoOptions,
-              margin: const EdgeInsets.only(left: 10)),
-          
+          CounterNumberField(
+              margin: EdgeInsets.zero,
+              controller: AutonomousValues.algaeRemoved,
+              onTapIncrement: () =>
+                  incrementNumber(AutonomousValues.algaeRemoved),
+              onTapDecrement: () =>
+                  decrementNumber(AutonomousValues.algaeRemoved)),
+          CounterNumberField(
+              margin: EdgeInsets.only(left: 10),
+              controller: AutonomousValues.algaeProcessor,
+              onTapIncrement: () =>
+                  incrementNumber(AutonomousValues.algaeProcessor),
+              onTapDecrement: () =>
+                  decrementNumber(AutonomousValues.algaeProcessor)),
+          CounterNumberField(
+              margin: EdgeInsets.only(left: 10),
+              controller: AutonomousValues.algaeBarge,
+              onTapIncrement: () => incrementNumber(AutonomousValues.algaeBarge),
+              onTapDecrement: () => decrementNumber(AutonomousValues.algaeBarge)),
         ],
       ),
     );

@@ -6,12 +6,12 @@ class AutonomousValues {
   static TextEditingController autoStartPosition =
       TextEditingController(text: "Center");
   static TextEditingController autoMobility = TextEditingController(text: "No");
-  static TextEditingController autoSpeakerScored =
-      TextEditingController(text: "0");
-  static TextEditingController autoSpeakerMissed =
-      TextEditingController(text: "0");
-  static TextEditingController autoAmpScored = TextEditingController(text: "0");
-  static TextEditingController autoAmpMissed = TextEditingController(text: "0");
+  static TextEditingController coralHP = TextEditingController(text: "0");
+  static TextEditingController coralField = TextEditingController(text: "0");
+  static TextEditingController coralMissed = TextEditingController(text: "0");
+  static TextEditingController algaeRemoved = TextEditingController(text: "0");
+  static TextEditingController algaeProcessor = TextEditingController(text: "0");
+  static TextEditingController algaeBarge = TextEditingController(text: "0");
 
   // L1 trough sides
   static TextEditingController l1NW = TextEditingController(text: "0");

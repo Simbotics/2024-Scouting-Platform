@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/NumberInputField.dart';
 import 'package:scouting_platform/builders/bases/TextInputField.dart';
-import 'package:scouting_platform/routes/data/DataRoute.dart';
+import 'package:scouting_platform/routes/data/AutonomousDataRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/AppDataHelper.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
@@ -154,10 +154,10 @@ class _PrematchFieldsState extends State<PrematchFields> {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const DataRoute(title: "Data Input");
+                      return const AutonomousDataRoute(title: "Data Input");
                     }));
                   },
-                  child: const Text("Auto/Teleop >",
+                  child: const Text("Auto >",
                       style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Helvetica",

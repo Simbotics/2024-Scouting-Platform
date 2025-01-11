@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/PlatformRoute.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomousRightRows/AutonomousRightRow2.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousBottomReef.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousMiddleReef.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow1.dart';
@@ -10,7 +11,11 @@ import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/Aut
 import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow4.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow5.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow6.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/Auto';
+import 'package:scouting_platform/routes/data/fields/AutonomousRightRows/AutonomousRightRow1.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomousRightRows/AutonomousRightRow3.dart';
+import 'package:scouting_platform/routes/data/labels/AutonomousRightLabels/AutonomousRightLabel1.dart';
+import 'package:scouting_platform/routes/data/labels/AutonomousRightLabels/AutonomousRightLabel2.dart';
+import 'package:scouting_platform/routes/data/labels/AutonomousRightLabels/AutonomousRightLabel3.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
@@ -22,6 +27,7 @@ import 'package:scouting_platform/utils/data/values/SettingValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousTopReef.dart';
+import 'package:scouting_platform/styles/components/TitleStyle.dart';
 
 class AutonomousDataRoute extends StatefulWidget {
   const AutonomousDataRoute({super.key, required this.title});
@@ -77,9 +83,16 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
+                        // TitleStyle(
+                        //     text: "L4",
+                        //     padding: const EdgeInsets.only(
+                        //         right: 0.0, bottom: 10.0)),
+                        SizedBox(
+                          width: 120.0,
+                        ),
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            minimumSize: const Size(150.0, 47.0),
+                            minimumSize: const Size(150.0, 37.0),
                             backgroundColor: AppStyle.textInputColor,
                           ),
                           onPressed: () {
@@ -97,7 +110,7 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                         const SizedBox(width: 16.0),
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            minimumSize: const Size(150.0, 47.0),
+                            minimumSize: const Size(150.0, 37.0),
                             backgroundColor: AppStyle.textInputColor,
                           ),
                           onPressed: () {
@@ -117,6 +130,12 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                         ),
                       ],
                     ),
+                    const AutonomousRightLabel1(),
+                    const AutonomousRightRow1(),
+                    const AutonomousRightLabel2(),
+                    const AutonomousRightRow2(),
+                    const AutonomousRightLabel3(),
+                    const AutonomousRightRow3(),
                   ],
                 ),
               ),
@@ -152,10 +171,9 @@ class _DataRouteState extends State<AutonomousDataRoute> {
         }
 
         setState(() {
-          AutonomousValues.autoSpeakerScored.text = "0";
-          AutonomousValues.autoSpeakerMissed.text = "0";
-          AutonomousValues.autoAmpMissed.text = "0";
-          AutonomousValues.autoAmpScored.text = "0";
+          AutonomousValues.coralHP.text = "0";
+          AutonomousValues.coralMissed.text = "0";
+          AutonomousValues.coralField.text = "0";
           TeleoperatedValues.speaker.text = "0";
           TeleoperatedValues.speakerMissed.text = "0";
           TeleoperatedValues.amp.text = "0";

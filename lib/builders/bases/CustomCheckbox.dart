@@ -12,7 +12,7 @@ class CustomCheckbox extends StatefulWidget {
     super.key,
     required this.controller,
     this.label = "",
-    this.margin = const EdgeInsets.all(5.0),
+    this.margin = const EdgeInsets.all(2.0),
     this.backgroundColor = Colors.grey,
     this.checkColor = Colors.white,
     this.labelColor = Colors.white,
@@ -47,8 +47,9 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      padding: const EdgeInsets.all(5),
+      height: 30,
+      width: 50,
+      padding: const EdgeInsets.all(0),
       margin: widget.margin,
       color: widget.backgroundColor,
       child: Row(
