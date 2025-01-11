@@ -45,14 +45,54 @@ class QrcodeHelper {
   static String computeAutonomousValues() {
     return computeValues([
       // L1 Coral Values
-      parseInt(AutonomousValues.l1NW.text),
-      parseInt(AutonomousValues.l1NE.text),
-      parseInt(AutonomousValues.l1W.text),
-      parseInt(AutonomousValues.l1E.text),
-      parseInt(AutonomousValues.l1SW.text),
-      parseInt(AutonomousValues.l1SE.text),
+      parseInt(AutonomousValues.l1NW.text), // index 4
+      parseInt(AutonomousValues.l1NE.text), // index 5
+      parseInt(AutonomousValues.l1W.text), // index 6
+      parseInt(AutonomousValues.l1E.text), // index 7
+      parseInt(AutonomousValues.l1SW.text), // index 8
+      parseInt(AutonomousValues.l1SE.text), // index 9
 
       // L2 Coral Values
+      parseInt(AutonomousValues.l2A.text), // index 10
+      parseInt(AutonomousValues.l2B.text), // index 11
+      parseInt(AutonomousValues.l2C.text), // index 12
+      parseInt(AutonomousValues.l2D.text), // index 13
+      parseInt(AutonomousValues.l2E.text), // index 14
+      parseInt(AutonomousValues.l2F.text), // index 15
+      parseInt(AutonomousValues.l2G.text), // index 16
+      parseInt(AutonomousValues.l2H.text), // index 17
+      parseInt(AutonomousValues.l2I.text), // index 18
+      parseInt(AutonomousValues.l2J.text), // index 19
+      parseInt(AutonomousValues.l2K.text), // index 20
+      parseInt(AutonomousValues.l2L.text), // index 21
+
+      // L3 Coral Values
+      parseInt(AutonomousValues.l3A.text), // index 22
+      parseInt(AutonomousValues.l3B.text), // index 23
+      parseInt(AutonomousValues.l3C.text), // index 24
+      parseInt(AutonomousValues.l3D.text), // index 25
+      parseInt(AutonomousValues.l3E.text), // index 26
+      parseInt(AutonomousValues.l3F.text), // index 27
+      parseInt(AutonomousValues.l3G.text), // index 28
+      parseInt(AutonomousValues.l3H.text), // index 29
+      parseInt(AutonomousValues.l3I.text), // index 30
+      parseInt(AutonomousValues.l3J.text), // index 31
+      parseInt(AutonomousValues.l3K.text), // index 32
+      parseInt(AutonomousValues.l3L.text), // index 33
+
+      // L4 Coral Values
+      parseInt(AutonomousValues.l3A.text), // index 34
+      parseInt(AutonomousValues.l3B.text), // index 35
+      parseInt(AutonomousValues.l3C.text), // index 36
+      parseInt(AutonomousValues.l3D.text), // index 37
+      parseInt(AutonomousValues.l3E.text), // index 38
+      parseInt(AutonomousValues.l3F.text), // index 39
+      parseInt(AutonomousValues.l3G.text), // index 40
+      parseInt(AutonomousValues.l3H.text), // index 41
+      parseInt(AutonomousValues.l3I.text), // index 42
+      parseInt(AutonomousValues.l3J.text), // index 43
+      parseInt(AutonomousValues.l3K.text), // index 44
+      parseInt(AutonomousValues.l3L.text), // index 45
     ]);
   }
 

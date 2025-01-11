@@ -68,9 +68,9 @@ flutter:
     - assets/images/nav_banner.png
     - assets/images/simbotics_logo.png
     # Reefscape diagram
-    - assets/images/reefscape/karthik-reef-diagram-top.png
+    - assets/images/reefscape/karthik-reef-diagram-top-shorter.png
     - assets/images/reefscape/karthik-reef-diagram-middle.png
-    - assets/images/reefscape/karthik-reef-diagram-bottom.png
+    - assets/images/reefscape/karthik-reef-diagram-bottom-shorter.png
     # QR code centerfolds
     - assets/images/centerfolds/jqr_code_centerfold.png
     - assets/images/centerfolds/jimmy_centerfold.png

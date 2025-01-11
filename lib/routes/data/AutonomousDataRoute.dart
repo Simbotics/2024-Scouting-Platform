@@ -4,8 +4,14 @@ import 'package:scouting_platform/builders/PlatformRoute.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousBottomReef.dart';
 import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousMiddleReef.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow1.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow2.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow3.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow4.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow5.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomouscCheckboxRows/AutonomousRow6.dart';
+import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/Auto';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
-import 'package:scouting_platform/styles/components/TitleStyle.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
@@ -39,7 +45,7 @@ class _DataRouteState extends State<AutonomousDataRoute> {
       body: SingleChildScrollView(
         physics: const AlwaysScrollableScrollPhysics(),
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(5.0),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -47,16 +53,18 @@ class _DataRouteState extends State<AutonomousDataRoute> {
               Expanded(
                 flex: 1,
                 child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const TitleStyle(
-                      text: "Auto Data",
-                      padding: EdgeInsets.only(top: 10.0),
-                    ),
-                    const SizedBox(height: 20.0),
+                    const AutonomousRow1(),
+                    const AutonomousRow2(),
+                    const AutonomousRow3(),
                     const AutonomousTopReef(),
                     const AutonomousMiddleReef(),
                     const AutonomousBottomReef(),
+                    const AutonomousRow4(),
+                    const AutonomousRow5(),
+                    const AutonomousRow6(),
                   ],
                 ),
               ),

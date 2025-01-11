@@ -4,16 +4,16 @@ import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
 import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
 
-class AutonomousTopReef extends StatefulWidget {
-  const AutonomousTopReef({
+class AutonomousRightRow1 extends StatefulWidget {
+  const AutonomousRightRow1({
     super.key,
   });
 
   @override
-  State<AutonomousTopReef> createState() => _AutonomousRow1State();
+  State<AutonomousRightRow1> createState() => _AutonomousRightRow1State();
 }
 
-class _AutonomousRow1State extends State<AutonomousTopReef> {
+class _AutonomousRightRow1State extends State<AutonomousRightRow1> {
   /// Increments an integer in a controller's value by one
   void incrementNumber(TextEditingController controller) {
     if (!mounted) return;
@@ -39,29 +39,21 @@ class _AutonomousRow1State extends State<AutonomousTopReef> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-              'assets/images/reefscape/karthik-reef-diagram-top-shorter.png'), // Replace with your image path
-          fit: BoxFit.cover,
-        ),
-      ),
-      height: 130, // Set a height for the container
+      decoration: BoxDecoration(),
+      height: 50, // Set a height for the container
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center, // Center the row contents
         children: [
-          // North West (Top Left) trough counter
-          CounterNumberField(
-              margin: EdgeInsets.only(right: 50.0, top: 50.0, left: 100.0),
-              controller: AutonomousValues.l1NW,
-              onTapDecrement: () => decrementNumber(AutonomousValues.l1NW),
-              onTapIncrement: () => incrementNumber(AutonomousValues.l1NW)),
-          // North East (Top Right) trough counter
-          CounterNumberField(
-              margin: EdgeInsets.only(right: 100.0, top: 50.0),
-              controller: AutonomousValues.l1NE,
-              onTapDecrement: () => decrementNumber(AutonomousValues.l1NE),
-              onTapIncrement: () => incrementNumber(AutonomousValues.l1NE)),
+          // Auto starting position
+          PlatformDropdownMenu(
+              dropdownMenuSelectedItem: AutonomousValues.autoStartPosition.text,
+              onChanged: (value) {
+                setState(() {
+                  AutonomousValues.autoMobility.text = value;
+                });
+              },
+              dropdownItems: OptionConstants.startPositions,
+              margin: const EdgeInsets.only(left: 20)),
         ],
       ),
     );
