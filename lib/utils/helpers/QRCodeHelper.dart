@@ -83,10 +83,10 @@ class QrcodeHelper {
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      parseString(CommentValues.autoComments.text), // index: 22
-      parseString(CommentValues.autoOrder.text), // index: 23
-      parseString(CommentValues.teleopComments.text), // index: 24
-      parseString(CommentValues.endgameComments.text) // index: 25
+      parseString(stripEmoji(CommentValues.autoComments.text)), // index: 17
+      parseString(stripEmoji(CommentValues.autoOrder.text)), // index: 18
+      parseString(stripEmoji(CommentValues.teleopComments.text)), // index: 19
+      parseString(stripEmoji(CommentValues.endgameComments.text)) // index: 20
     ]);
   }
 
@@ -112,5 +112,10 @@ class QrcodeHelper {
   /// Parses an integer and returns it as a string, if the integer is null then it returns "0"
   static String parseInt(String value) {
     return (int.tryParse(value) ?? 0).toString();
+  }
+
+  /// Removes any character that is not a letter, number, whitespace or a special character
+  static String stripEmoji(String value) {
+    return value.replaceAll(RegExp("[^A-z0-9.,\\-';/?!()[\\]+=\\s@#\$%&*~]"), '');
   }
 }
