@@ -145,7 +145,6 @@ class _AutoRouteState extends State<AutoRoute> {
           EndgameValues.endgame.text = "No"; // was climb, now endgame
           EndgameValues.climbTime.text = "0"; // parked was below
           EndgameValues.stopwatchState.text = "0";
-          EndgameValues.trap.text = "0";
           EndgameValues.stopwatch.stop();
           EndgameValues.stopwatch.reset();
           CommentValues.autoComments.text = "";

@@ -10,5 +10,4 @@ class EndgameValues {
 
   static TextEditingController endgame = TextEditingController(text: "No");
   static TextEditingController climbTime = TextEditingController(text: "0");
-  static TextEditingController trap = TextEditingController(text: "0");
 }

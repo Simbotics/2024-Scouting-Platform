@@ -1,6 +1,5 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
-import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
 import 'package:scouting_platform/builders/bases/PlatformDropdownMenu.dart';
 import 'package:scouting_platform/builders/bases/StopwatchButton.dart';
 import 'package:scouting_platform/utils/data/constants/OptionConstants.dart';
@@ -58,11 +57,6 @@ class _EndgameFieldsState extends State<EndgameFields> {
           state: EndgameValues.stopwatchState,
           timer: EndgameValues.stopwatch,
         ),
-        //trap
-        CounterNumberField(
-            controller: EndgameValues.trap,
-            onTapDecrement: () => decrementNumber(EndgameValues.trap),
-            onTapIncrement: () => incrementNumber(EndgameValues.trap)),
       ],
     );
   }

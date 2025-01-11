@@ -77,7 +77,6 @@ class QrcodeHelper {
     return computeValues([
       parseString(EndgameValues.endgame.text), // index: 19
       parseString(EndgameValues.climbTime.text), // index: 20
-      parseInt(EndgameValues.trap.text) // index: 21
     ]);
   }
 
