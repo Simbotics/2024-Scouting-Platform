@@ -4,12 +4,13 @@ import 'package:scouting_platform/builders/PlatformRoute.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
 import 'package:scouting_platform/routes/teleop/fields/TeleoperatedFields.dart';
 import 'package:scouting_platform/routes/teleop/fields/TeleoperatedFields2.dart';
+import 'package:scouting_platform/routes/teleop/fields/TeleoperatedFields3.dart';
 import 'package:scouting_platform/routes/teleop/labels/TeleoperatedLabels.dart';
 import 'package:scouting_platform/routes/teleop/labels/TeleoperatedLabels2.dart';
+import 'package:scouting_platform/routes/teleop/labels/TeleoperatedLabels3.dart';
 import 'package:scouting_platform/routes/teleop/fields/EndgameFields.dart';
 import 'package:scouting_platform/routes/teleop/labels/EndgameLabels.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
-import 'package:scouting_platform/styles/components/TitleStyle.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
@@ -88,21 +89,12 @@ class _TeleopRouteState extends State<TeleopRoute> {
                       ))),
             ],
           ),
-          const TitleStyle(
-              text: "Teleop Data",
-              padding: EdgeInsets.only(top: 20.0, left: 20.0)),
           const TeleoperatedLabels(),
           const TeleoperatedFields(),
           const TeleoperatedLabels2(),
           const TeleoperatedFields2(),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TitleStyle(
-                  text: "Endgame Data",
-                  padding: EdgeInsets.only(top: 20.0, left: 20.0)),
-            ],
-          ),
+          const TeleoperatedLabels3(),
+          const TeleoperatedFields3(),
           const EndgameLabels(),
           const EndgameFields(),
         ]),

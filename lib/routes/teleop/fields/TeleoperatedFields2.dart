@@ -70,20 +70,6 @@ class _TeleoperatedFields2State extends State<TeleoperatedFields2> {
                 decrementNumber(TeleoperatedValues.algaeBarge),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.algaeBarge)),
-        //algae barge
-        CounterNumberField(
-            controller: TeleoperatedValues.humanPlayerMisses,
-            onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.humanPlayerMisses),
-            onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.humanPlayerMisses)),
-        //algae barge
-        CounterNumberField(
-            controller: TeleoperatedValues.fieldCrosses,
-            onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.fieldCrosses),
-            onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.fieldCrosses)),
       ],
     );
   }

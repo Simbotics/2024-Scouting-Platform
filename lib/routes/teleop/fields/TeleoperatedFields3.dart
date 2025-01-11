@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 
-class TeleoperatedFields extends StatefulWidget {
-  const TeleoperatedFields({
+class TeleoperatedFields3 extends StatefulWidget {
+  const TeleoperatedFields3({
     super.key,
   });
 
   @override
-  State<TeleoperatedFields> createState() => _TeleoperatedFieldsState();
+  State<TeleoperatedFields3> createState() => _TeleoperatedFields3State();
 }
 
-class _TeleoperatedFieldsState extends State<TeleoperatedFields> {
+class _TeleoperatedFields3State extends State<TeleoperatedFields3> {
   /// Increments an integer in a controllers value by one
   void incrementNumber(TextEditingController controller) {
     if (!mounted) return;
@@ -39,41 +39,33 @@ class _TeleoperatedFieldsState extends State<TeleoperatedFields> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        //coral l1 scored
+        //algae removed
         CounterNumberField(
-            controller: TeleoperatedValues.coralNearL1,
+            controller: TeleoperatedValues.algaeRemoved,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralNearL1),
+                decrementNumber(TeleoperatedValues.algaeRemoved),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralNearL1)),
-        //coral l2 scored
+                incrementNumber(TeleoperatedValues.algaeRemoved)),
+        //algae processor
         CounterNumberField(
-            controller: TeleoperatedValues.coralNearL2,
+            controller: TeleoperatedValues.algaeProcessor,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralNearL2),
+                decrementNumber(TeleoperatedValues.algaeProcessor),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralNearL2)),
-        //coral l3 scored
+                incrementNumber(TeleoperatedValues.algaeProcessor)),
         CounterNumberField(
-            controller: TeleoperatedValues.coralNearL3,
+            controller: TeleoperatedValues.humanPlayerMisses,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralNearL3),
+                decrementNumber(TeleoperatedValues.humanPlayerMisses),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralNearL3)),
-        //coral l4 scored
+                incrementNumber(TeleoperatedValues.humanPlayerMisses)),
+        //algae barge
         CounterNumberField(
-            controller: TeleoperatedValues.coralNearL4,
+            controller: TeleoperatedValues.fieldCrosses,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralNearL4),
+                decrementNumber(TeleoperatedValues.fieldCrosses),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralNearL4)),
-        //coral missed
-        CounterNumberField(
-            controller: TeleoperatedValues.coralMissed,
-            onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralMissed),
-            onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralMissed)),
+                incrementNumber(TeleoperatedValues.fieldCrosses)),
       ],
     );
   }
