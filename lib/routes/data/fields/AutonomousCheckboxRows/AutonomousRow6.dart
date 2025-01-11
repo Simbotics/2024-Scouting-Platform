@@ -1,17 +1,18 @@
+// ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
 import 'package:scouting_platform/builders/bases/CustomCheckbox.dart';
 
-class AutonomousRow5 extends StatefulWidget {
-  const AutonomousRow5({
+class AutonomousRow6 extends StatefulWidget {
+  const AutonomousRow6({
     super.key,
   });
 
   @override
-  State<AutonomousRow5> createState() => _AutonomousRow5State();
+  State<AutonomousRow6> createState() => _AutonomousRow6State();
 }
 
-class _AutonomousRow5State extends State<AutonomousRow5> {
+class _AutonomousRow6State extends State<AutonomousRow6> {
   /// Increments an integer in a controller's value by one
   void incrementNumber(TextEditingController controller) {
     if (!mounted) return;
@@ -44,42 +45,42 @@ class _AutonomousRow5State extends State<AutonomousRow5> {
         children: [
           // B
           CustomCheckbox(
-              controller: AutonomousValues.l3B,
+              controller: AutonomousValues.l2B,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 18.0)),
           // C
           CustomCheckbox(
-              controller: AutonomousValues.l3C,
+              controller: AutonomousValues.l2C,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 35.0)),
           // D
           CustomCheckbox(
-              controller: AutonomousValues.l3D,
+              controller: AutonomousValues.l2D,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 35.0)),
           // E
           CustomCheckbox(
-              controller: AutonomousValues.l3E,
+              controller: AutonomousValues.l2E,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
-              margin: const EdgeInsets.only(right: 30)),
+              margin: const EdgeInsets.only(right: 30.0)),
           // F
           CustomCheckbox(
-              controller: AutonomousValues.l3F,
+              controller: AutonomousValues.l2F,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
               margin: const EdgeInsets.only(right: 25.0)),
           // G
           CustomCheckbox(
-              controller: AutonomousValues.l3G,
+              controller: AutonomousValues.l2G,
               backgroundColor: Colors.grey.shade800,
               checkColor: Colors.white,
               labelColor: Colors.white,
