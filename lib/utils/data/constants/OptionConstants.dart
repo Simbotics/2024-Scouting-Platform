@@ -17,7 +17,7 @@ class OptionConstants {
 
   static final yesNoOptions = ["Yes", "No"];
 
-  static final endgameOptions = ["No", "Single", "Double", "Park"];
+  static final endgameOptions = ["No", "Shallow", "Deep", "Park"];
 
   static List<String> availableDriverstations = [
     "Red 1",

@@ -1,69 +1,21 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 
-class TeleoperatedLabels extends StatefulWidget {
-  const TeleoperatedLabels({
+class TeleoperatedLabels2 extends StatefulWidget {
+  const TeleoperatedLabels2({
     super.key,
   });
 
   @override
-  State<TeleoperatedLabels> createState() => _TeleoperatedLabelsState();
+  State<TeleoperatedLabels2> createState() => _TeleoperatedLabels2State();
 }
 
-class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
+class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        //Speaker Scored
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(
-                left: 20.0,
-                top: 20.0,
-              ),
-              child: const Text(
-                "Speaker Scored",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-        //speaker missed
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
-              child: const Text(
-                "Speaker Missed",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-        //amp scored
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
-              child: const Text(
-                "Amp Scored",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-        // Amp missed
+        // coral l1 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -71,7 +23,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
               padding:
                   const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Amp Missed",
+                "Coral L1 Far Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -79,7 +31,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-        // Passes
+        // coral l2 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -87,7 +39,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
               padding:
                   const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Passes",
+                "Coral L2 Far Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -95,7 +47,54 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-
+        // coral l3 far scored
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              width: 170.0,
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
+              child: const Text(
+                "Coral L3 Far Scored",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0),
+              ),
+            )),
+        // coral l4 far scored
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              width: 170.0,
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
+              child: const Text(
+                "Coral L4 Far Scored",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0),
+              ),
+            )),
+        // algae barge
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              width: 170.0,
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
+              child: const Text(
+                "Algae Barge",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0),
+              ),
+            )),
         const Divider(),
       ],
     );

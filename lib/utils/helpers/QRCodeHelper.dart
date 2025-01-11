@@ -55,20 +55,28 @@ class QrcodeHelper {
   /// Computes all teleoperated values and returns them as a single string separated by a caret
   static String computeTeleopValues() {
     return computeValues([
-      parseInt(TeleoperatedValues.speaker.text), // index: 9
-      parseInt(TeleoperatedValues.speakerMissed.text), // index: 10
-      parseInt(TeleoperatedValues.amp.text), // index: 11
-      parseInt(TeleoperatedValues.ampMissed.text), // index: 12
-      parseInt(TeleoperatedValues.passes.text) // index: 13
+      parseInt(TeleoperatedValues.coralNearL1.text), // index: 9
+      parseInt(TeleoperatedValues.coralNearL2.text), // index: 10
+      parseInt(TeleoperatedValues.coralNearL3.text), // index: 11
+      parseInt(TeleoperatedValues.coralNearL4.text), // index: 12
+      parseInt(TeleoperatedValues.coralFarL1.text), // index: 9
+      parseInt(TeleoperatedValues.coralFarL2.text), // index: 10
+      parseInt(TeleoperatedValues.coralFarL3.text), // index: 11
+      parseInt(TeleoperatedValues.coralFarL4.text), // index: 12
+      parseInt(TeleoperatedValues.coralMissed.text), // index: 13
+      parseInt(TeleoperatedValues.algaeRemoved.text), // index: 14
+      parseInt(TeleoperatedValues.algaeProcessor.text), // index: 15
+      parseInt(TeleoperatedValues.algaeBarge.text), // index: 16
+      parseInt(TeleoperatedValues.humanPlayerMisses.text), // index: 17
+      parseInt(TeleoperatedValues.fieldCrosses.text), // index: 18
     ]);
   }
 
   /// Computes all endgame values and returns them as a single string separated by a caret
   static String computeEndgameValues() {
     return computeValues([
-      parseString(EndgameValues.endgame.text), // index: 14
-      parseString(EndgameValues.climbTime.text), // index: 15
-      parseInt(EndgameValues.trap.text) // index: 16
+      parseString(EndgameValues.endgame.text), // index: 19
+      parseString(EndgameValues.climbTime.text), // index: 20
     ]);
   }
 
@@ -87,7 +95,7 @@ class QrcodeHelper {
     return computeValues([
       parseString(OptionConstants.availableDriverstations
           .indexOf(SettingValues.selectedDriverStation.text)
-          .toString()) // index: 21
+          .toString()) // index: 26
     ]);
   }
 

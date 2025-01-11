@@ -2,14 +2,15 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/PlatformRoute.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousFields.dart';
-import 'package:scouting_platform/routes/data/fields/TeleoperatedFields.dart';
-import 'package:scouting_platform/routes/data/fields/EndgameFields.dart';
-import 'package:scouting_platform/routes/data/labels/AutonomousLabels.dart';
-import 'package:scouting_platform/routes/data/labels/TeleoperatedLabels.dart';
-import 'package:scouting_platform/routes/data/labels/EndgameLabels.dart';
+import 'package:scouting_platform/routes/teleop/fields/TeleoperatedFields.dart';
+import 'package:scouting_platform/routes/teleop/fields/TeleoperatedFields2.dart';
+import 'package:scouting_platform/routes/teleop/fields/TeleoperatedFields3.dart';
+import 'package:scouting_platform/routes/teleop/labels/TeleoperatedLabels.dart';
+import 'package:scouting_platform/routes/teleop/labels/TeleoperatedLabels2.dart';
+import 'package:scouting_platform/routes/teleop/labels/TeleoperatedLabels3.dart';
+import 'package:scouting_platform/routes/teleop/fields/EndgameFields.dart';
+import 'package:scouting_platform/routes/teleop/labels/EndgameLabels.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
-import 'package:scouting_platform/styles/components/TitleStyle.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
@@ -20,15 +21,15 @@ import 'package:scouting_platform/utils/data/values/SettingValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
 
-class DataRoute extends StatefulWidget {
-  const DataRoute({super.key, required this.title});
+class TeleopRoute extends StatefulWidget {
+  const TeleopRoute({super.key, required this.title});
   final String title;
 
   @override
-  State<DataRoute> createState() => _DataRouteState();
+  State<TeleopRoute> createState() => _TeleopRouteState();
 }
 
-class _DataRouteState extends State<DataRoute> {
+class _TeleopRouteState extends State<TeleopRoute> {
   @override
   void initState() {
     super.initState();
@@ -45,9 +46,6 @@ class _DataRouteState extends State<DataRoute> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const TitleStyle(
-                  text: "Auto Data",
-                  padding: EdgeInsets.only(top: 10.0, left: 20.0)),
               Padding(
                 padding:
                     const EdgeInsets.only(right: 50.0, top: 10.0, left: 125.0),
@@ -91,21 +89,12 @@ class _DataRouteState extends State<DataRoute> {
                       ))),
             ],
           ),
-          const AutonomousLabels(),
-          const AutonomousFields(),
-          const TitleStyle(
-              text: "Teleop Data",
-              padding: EdgeInsets.only(top: 20.0, left: 20.0)),
           const TeleoperatedLabels(),
           const TeleoperatedFields(),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TitleStyle(
-                  text: "Endgame Data",
-                  padding: EdgeInsets.only(top: 20.0, left: 20.0)),
-            ],
-          ),
+          const TeleoperatedLabels2(),
+          const TeleoperatedFields2(),
+          const TeleoperatedLabels3(),
+          const TeleoperatedFields3(),
           const EndgameLabels(),
           const EndgameFields(),
         ]),
@@ -146,16 +135,24 @@ class _DataRouteState extends State<DataRoute> {
           AutonomousValues.autoSpeakerMissed.text = "0";
           AutonomousValues.autoAmpMissed.text = "0";
           AutonomousValues.autoAmpScored.text = "0";
-          TeleoperatedValues.speaker.text = "0";
-          TeleoperatedValues.speakerMissed.text = "0";
-          TeleoperatedValues.amp.text = "0";
-          TeleoperatedValues.ampMissed.text = "0";
+          TeleoperatedValues.coralNearL1.text = "0";
+          TeleoperatedValues.coralNearL2.text = "0";
+          TeleoperatedValues.coralNearL3.text = "0";
+          TeleoperatedValues.coralNearL4.text = "0";
+          TeleoperatedValues.coralFarL1.text = "0";
+          TeleoperatedValues.coralFarL2.text = "0";
+          TeleoperatedValues.coralFarL3.text = "0";
+          TeleoperatedValues.coralFarL4.text = "0";
+          TeleoperatedValues.coralMissed.text = "0";
+          TeleoperatedValues.algaeRemoved.text = "0";
+          TeleoperatedValues.algaeProcessor.text = "0";
+          TeleoperatedValues.algaeBarge.text = "0";
+          TeleoperatedValues.humanPlayerMisses.text = "0";
+          TeleoperatedValues.fieldCrosses.text = "0";
           AutonomousValues.autoMobility.text = "No";
           EndgameValues.endgame.text = "No"; // was climb, now endgame
           EndgameValues.climbTime.text = "0"; // parked was below
           EndgameValues.stopwatchState.text = "0";
-          TeleoperatedValues.passes.text = "0";
-          EndgameValues.trap.text = "0";
           EndgameValues.stopwatch.stop();
           EndgameValues.stopwatch.reset();
           CommentValues.autoComments.text = "";
