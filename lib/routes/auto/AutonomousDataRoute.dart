@@ -16,12 +16,15 @@ import 'package:scouting_platform/routes/auto/fields/AutonomousRows.dart/Autonom
 import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/AutonomousRightLabel1.dart';
 import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/AutonomousRightLabel2.dart';
 import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/AutonomousRightLabel3.dart';
-import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
+import 'package:scouting_platform/routes/teleop/TeleopRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
+import 'package:scouting_platform/utils/data/values/CommentValues.dart';
+import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
 import 'package:scouting_platform/utils/data/values/SettingValues.dart';
+import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
 
@@ -123,11 +126,11 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                           onPressed: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) {
-                              return const CommentsRoute(title: "Comments");
+                              return const TeleopRoute(title: "Comments");
                             }));
                           },
                           child: const Text(
-                            "Comments >",
+                            "Teleop >",
                             style: TextStyle(
                               fontSize: 16.0,
                               fontFamily: "Helvetica",
@@ -238,6 +241,31 @@ class _DataRouteState extends State<AutonomousDataRoute> {
           AutonomousValues.l4J.text = "0";
           AutonomousValues.l4K.text = "0";
           AutonomousValues.l4L.text = "0";
+
+          TeleoperatedValues.coralNearL1.text = "0";
+          TeleoperatedValues.coralNearL2.text = "0";
+          TeleoperatedValues.coralNearL3.text = "0";
+          TeleoperatedValues.coralNearL4.text = "0";
+          TeleoperatedValues.coralFarL1.text = "0";
+          TeleoperatedValues.coralFarL2.text = "0";
+          TeleoperatedValues.coralFarL3.text = "0";
+          TeleoperatedValues.coralFarL4.text = "0";
+          TeleoperatedValues.coralMissed.text = "0";
+          TeleoperatedValues.algaeRemoved.text = "0";
+          TeleoperatedValues.algaeProcessor.text = "0";
+          TeleoperatedValues.algaeBarge.text = "0";
+          TeleoperatedValues.humanPlayerMisses.text = "0";
+          TeleoperatedValues.fieldCrosses.text = "0";
+          AutonomousValues.autoMobility.text = "No";
+          EndgameValues.endgame.text = "No"; // was climb, now endgame
+          EndgameValues.climbTime.text = "0"; // parked was below
+          EndgameValues.stopwatchState.text = "0";
+          EndgameValues.stopwatch.stop();
+          EndgameValues.stopwatch.reset();
+          CommentValues.autoComments.text = "";
+          CommentValues.autoOrder.text = "";
+          CommentValues.teleopComments.text = "";
+          CommentValues.endgameComments.text = "";
         });
         Navigator.of(context, rootNavigator: true).pop('dialog');
         Navigator.push(context, MaterialPageRoute(builder: (context) {
