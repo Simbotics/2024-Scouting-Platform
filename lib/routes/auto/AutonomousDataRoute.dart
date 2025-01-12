@@ -19,12 +19,8 @@ import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/Auton
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
 import 'package:scouting_platform/routes/teleop/TeleopRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
-import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
-import 'package:scouting_platform/utils/data/values/CommentValues.dart';
-import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
 import 'package:scouting_platform/utils/data/values/SettingValues.dart';
-import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 import 'package:scouting_platform/utils/helpers/AppDataHelper.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
