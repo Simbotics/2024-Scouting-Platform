@@ -154,7 +154,7 @@ class _PrematchFieldsState extends State<PrematchFields> {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const AutonomousDataRoute(title: "Data Input");
+                      return const AutonomousDataRoute(title: "Auto");
                     }));
                   },
                   child: const Text("Auto >",

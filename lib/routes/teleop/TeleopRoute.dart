@@ -109,6 +109,20 @@ class _TeleopRouteState extends State<TeleopRoute> {
                       ))),
             ],
           ),
+          Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                width: 400.0,
+                padding: const EdgeInsets.only(top: 20.0, left: 20.0),
+                child: Text(
+                  "Driver Station: ${SettingValues.selectedDriverStation.text}, Match #: ${PrematchValues.matchNumber.text}, Team #: ${PrematchValues.teamNumber.text}",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15.0),
+                ),
+              )),
           const TeleoperatedLabels4(),
           const TeleoperatedFields4(),
           const TeleoperatedLabels3(),

@@ -1,12 +1,12 @@
 // ignore_for_file: file_names
 
 class AppConstants {
-  static const int year = 2024;
+  static const int year = 2025;
   static const String appName = "Scouting Platform";
 
   static const bool isDebug = false;
 
-  static const String defaultEventID = "2024onha2";
+  static const String defaultEventID = "2023oncmp2";
   static const String defaultFileName = "2024-STEMley";
 
   static const String githubSchedulesCDN =

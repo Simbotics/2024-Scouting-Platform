@@ -155,6 +155,20 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                         ),
                       ],
                     ),
+                                        Align(
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          width: 400.0,
+                          padding: const EdgeInsets.only(top: 20.0, right: 0.0),
+                          child: Text(
+                  "Driver Station: ${SettingValues.selectedDriverStation.text}, Match #: ${PrematchValues.matchNumber.text}, Team # ${PrematchValues.teamNumber.text}",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15.0),
+                          ),
+                        )),
                     // various right side data entry and labels
                     const AutonomousRightLabel1(),
                     const AutonomousRightRow1(),
