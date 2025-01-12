@@ -99,38 +99,38 @@ class QrcodeHelper {
   /// Computes all teleoperated values and returns them as a single string separated by a caret
   static String computeTeleopValues() {
     return computeValues([
-      parseInt(TeleoperatedValues.coralNearL1.text), // index: 9
-      parseInt(TeleoperatedValues.coralNearL2.text), // index: 10
-      parseInt(TeleoperatedValues.coralNearL3.text), // index: 11
-      parseInt(TeleoperatedValues.coralNearL4.text), // index: 12
-      parseInt(TeleoperatedValues.coralFarL1.text), // index: 9
-      parseInt(TeleoperatedValues.coralFarL2.text), // index: 10
-      parseInt(TeleoperatedValues.coralFarL3.text), // index: 11
-      parseInt(TeleoperatedValues.coralFarL4.text), // index: 12
-      parseInt(TeleoperatedValues.coralMissed.text), // index: 13
-      parseInt(TeleoperatedValues.algaeRemoved.text), // index: 14
-      parseInt(TeleoperatedValues.algaeProcessor.text), // index: 15
-      parseInt(TeleoperatedValues.algaeBarge.text), // index: 16
-      parseInt(TeleoperatedValues.humanPlayerMisses.text), // index: 17
-      parseInt(TeleoperatedValues.fieldCrosses.text), // index: 18
+      parseInt(TeleoperatedValues.coralNearL1.text),      // index: 46
+      parseInt(TeleoperatedValues.coralNearL2.text),      // index: 47
+      parseInt(TeleoperatedValues.coralNearL3.text),      // index: 48
+      parseInt(TeleoperatedValues.coralNearL4.text),      // index: 49
+      parseInt(TeleoperatedValues.coralFarL1.text),       // index: 50
+      parseInt(TeleoperatedValues.coralFarL2.text),       // index: 51
+      parseInt(TeleoperatedValues.coralFarL3.text),       // index: 52
+      parseInt(TeleoperatedValues.coralFarL4.text),       // index: 53
+      parseInt(TeleoperatedValues.coralMissed.text),      // index: 54
+      parseInt(TeleoperatedValues.algaeRemoved.text),     // index: 55
+      parseInt(TeleoperatedValues.algaeProcessor.text),   // index: 56
+      parseInt(TeleoperatedValues.algaeBarge.text),       // index: 57
+      parseInt(TeleoperatedValues.humanPlayerMisses.text),// index: 58
+      parseInt(TeleoperatedValues.fieldCrosses.text),     // index: 59
     ]);
   }
 
   /// Computes all endgame values and returns them as a single string separated by a caret
   static String computeEndgameValues() {
     return computeValues([
-      parseString(EndgameValues.endgame.text), // index: 19
-      parseString(EndgameValues.climbTime.text), // index: 20
+      parseString(EndgameValues.endgame.text),    // index: 60
+      parseString(EndgameValues.climbTime.text),  // index: 61
     ]);
   }
 
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      parseString(stripEmoji(CommentValues.autoComments.text)), // index: 17
-      parseString(stripEmoji(CommentValues.autoOrder.text)), // index: 18
-      parseString(stripEmoji(CommentValues.teleopComments.text)), // index: 19
-      parseString(stripEmoji(CommentValues.endgameComments.text)) // index: 20
+      parseString(stripEmoji(CommentValues.autoComments.text)),   // index: 62
+      parseString(stripEmoji(CommentValues.autoOrder.text)),      // index: 63
+      parseString(stripEmoji(CommentValues.teleopComments.text)), // index: 64
+      parseString(stripEmoji(CommentValues.endgameComments.text)) // index: 65
     ]);
   }
 
@@ -139,7 +139,7 @@ class QrcodeHelper {
     return computeValues([
       parseString(OptionConstants.availableDriverstations
           .indexOf(SettingValues.selectedDriverStation.text)
-          .toString()) // index: 26
+          .toString()) // index: 66
     ]);
   }
 
