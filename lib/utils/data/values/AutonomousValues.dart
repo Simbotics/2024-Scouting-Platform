@@ -66,4 +66,69 @@ class AutonomousValues {
   static TextEditingController l2E = TextEditingController(text: "0");
   static TextEditingController l2F = TextEditingController(text: "0");
   static TextEditingController l2G = TextEditingController(text: "0");
+
+
+  static void resetAutoEtcValues() {
+    AutonomousValues.autoStartPosition.text = "Center";
+    AutonomousValues.autoMobility.text = "No";
+    AutonomousValues.coralMissed.text = "0";
+    AutonomousValues.coralHP.text = "0";
+    AutonomousValues.coralField.text = "0";
+    AutonomousValues.algaeRemoved.text = "0";
+    AutonomousValues.algaeBarge.text = "0";
+    AutonomousValues.algaeProcessor.text = "0";
+  }
+
+  static void resetAutoReef() {
+    // tough coral
+    AutonomousValues.l1E.text = "0";
+    AutonomousValues.l1NE.text = "0";
+    AutonomousValues.l1NW.text = "0";
+    AutonomousValues.l1SE.text = "0";
+    AutonomousValues.l1SW.text = "0";
+    AutonomousValues.l1W.text = "0";
+
+    // L2 coral
+    AutonomousValues.l2A.text = "0";
+    AutonomousValues.l2B.text = "0";
+    AutonomousValues.l2C.text = "0";
+    AutonomousValues.l2D.text = "0";
+    AutonomousValues.l2E.text = "0";
+    AutonomousValues.l2F.text = "0";
+    AutonomousValues.l2G.text = "0";
+    AutonomousValues.l2H.text = "0";
+    AutonomousValues.l2I.text = "0";
+    AutonomousValues.l2J.text = "0";
+    AutonomousValues.l2K.text = "0";
+    AutonomousValues.l2L.text = "0";
+
+    // L3 coral
+    AutonomousValues.l3A.text = "0";
+    AutonomousValues.l3B.text = "0";
+    AutonomousValues.l3C.text = "0";
+    AutonomousValues.l3D.text = "0";
+    AutonomousValues.l3E.text = "0";
+    AutonomousValues.l3F.text = "0";
+    AutonomousValues.l3G.text = "0";
+    AutonomousValues.l3H.text = "0";
+    AutonomousValues.l3I.text = "0";
+    AutonomousValues.l3J.text = "0";
+    AutonomousValues.l3K.text = "0";
+    AutonomousValues.l3L.text = "0";
+
+    // L4 coral
+    AutonomousValues.l4A.text = "0";
+    AutonomousValues.l4B.text = "0";
+    AutonomousValues.l4C.text = "0";
+    AutonomousValues.l4D.text = "0";
+    AutonomousValues.l4E.text = "0";
+    AutonomousValues.l4F.text = "0";
+    AutonomousValues.l4G.text = "0";
+    AutonomousValues.l4H.text = "0";
+    AutonomousValues.l4I.text = "0";
+    AutonomousValues.l4J.text = "0";
+    AutonomousValues.l4K.text = "0";
+    AutonomousValues.l4L.text = "0";
+  }
+
 }
