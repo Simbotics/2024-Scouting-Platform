@@ -38,7 +38,6 @@ dependencies:
   screen_brightness: ^2.0.0+1
   http: ^1.0.0
   permission_handler: ^11.3.0
-  remove_emoji: ^0.0.8
   path_provider: ^2.1.4
 
 dev_dependencies:

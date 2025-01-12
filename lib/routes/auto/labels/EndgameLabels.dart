@@ -15,7 +15,7 @@ class _EndgameLabelsState extends State<EndgameLabels> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        //hanging?
+        //climbing
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -46,22 +46,6 @@ class _EndgameLabelsState extends State<EndgameLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //trap?
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
-              child: const Text(
-                "Trap",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-
         const Divider(),
       ],
     );

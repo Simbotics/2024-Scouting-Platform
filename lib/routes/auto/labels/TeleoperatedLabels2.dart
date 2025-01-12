@@ -1,21 +1,21 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 
-class AutonomousLabels extends StatefulWidget {
-  const AutonomousLabels({
+class TeleoperatedLabels2 extends StatefulWidget {
+  const TeleoperatedLabels2({
     super.key,
   });
 
   @override
-  State<AutonomousLabels> createState() => _AutonomousLabelsState();
+  State<TeleoperatedLabels2> createState() => _TeleoperatedLabels2State();
 }
 
-class _AutonomousLabelsState extends State<AutonomousLabels> {
+class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        // Auto mobility status
+        // coral l1 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -23,7 +23,7 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
               padding:
                   const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Mobility",
+                "Coral L1 Far Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -31,15 +31,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //Auto Speaker Scored
+        // coral l2 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              margin: const EdgeInsets.only(left: 50.0),
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Speaker Scored",
+                "Coral L2 Far Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -47,14 +47,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //auto speaker missed
+        // coral l3 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Speaker Missed",
+                "Coral L3 Far Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -62,14 +63,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //auto amp scored
+        // coral l4 far scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Amp Scored",
+                "Coral L4 Far Scored",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -77,14 +79,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //Auto Amp Missed
+        // algae barge
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Amp Missed",
+                "Algae Barge",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -92,7 +95,6 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-
         const Divider(),
       ],
     );

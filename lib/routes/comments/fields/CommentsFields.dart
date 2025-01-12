@@ -40,24 +40,6 @@ class _CommentsFields extends State<CommentsFields> {
           maxLines: 10,
         ),
         const TitleStyle(
-            text: "Auto Note Order",
-            padding: EdgeInsets.only(top: 10.0, left: 18.0)),
-        TextInputField(
-          onChanged: (value) {
-            setState(() {
-              CommentValues.autoOrder.text = value;
-            });
-          },
-          textAlign: TextAlign.left,
-          hintText:
-              "1, 2, 3, 4, 5. One being the top of the field from your point of view and five being the bottom",
-          controller: CommentValues.autoOrder,
-          margin: const EdgeInsets.only(left: 18, top: 10),
-          width: 880,
-          height: 45.0,
-          maxLines: 10,
-        ),
-        const TitleStyle(
             text: "Teleop Comments",
             padding: EdgeInsets.only(top: 10.0, left: 18.0)),
         TextInputField(

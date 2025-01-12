@@ -1,32 +1,29 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/PlatformRoute.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousCheckboxRows/AutonomousRow1.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousCheckboxRows/AutonomousRow2.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousCheckboxRows/AutonomousRow3.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousCheckboxRows/AutonomousRow4.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousCheckboxRows/AutonomousRow5.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousCheckboxRows/AutonomousRow6.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousRightRows/AutonomousRightRow1.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousRightRows/AutonomousRightRow2.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousRightRows/AutonomousRightRow3.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousRows.dart/AutonomousBottomReef.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousRows.dart/AutonomousMiddleReef.dart';
+import 'package:scouting_platform/routes/auto/fields/AutonomousRows.dart/AutonomousTopReef.dart';
+import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/AutonomousRightLabel1.dart';
+import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/AutonomousRightLabel2.dart';
+import 'package:scouting_platform/routes/auto/labels/AutonomousRightLabels/AutonomousRightLabel3.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRightRows/AutonomousRightRow2.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousBottomReef.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousMiddleReef.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousCheckboxRows/AutonomousRow1.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousCheckboxRows/AutonomousRow2.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousCheckboxRows/AutonomousRow3.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousCheckboxRows/AutonomousRow4.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousCheckboxRows/AutonomousRow5.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousCheckboxRows/AutonomousRow6.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRightRows/AutonomousRightRow1.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRightRows/AutonomousRightRow3.dart';
-import 'package:scouting_platform/routes/data/labels/AutonomousRightLabels/AutonomousRightLabel1.dart';
-import 'package:scouting_platform/routes/data/labels/AutonomousRightLabels/AutonomousRightLabel2.dart';
-import 'package:scouting_platform/routes/data/labels/AutonomousRightLabels/AutonomousRightLabel3.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
-import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
-import 'package:scouting_platform/utils/data/values/CommentValues.dart';
-import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
 import 'package:scouting_platform/utils/data/values/SettingValues.dart';
-import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
+import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/helpers/UIHelper.dart';
-import 'package:scouting_platform/routes/data/fields/AutonomousRows.dart/AutonomousTopReef.dart';
 
 class AutonomousDataRoute extends StatefulWidget {
   const AutonomousDataRoute({super.key, required this.title});
