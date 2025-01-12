@@ -42,35 +42,35 @@ class _TeleoperatedFields4State extends State<TeleoperatedFields4> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        //coral l4 scored
+        //coral l4 near
         CounterNumberField(
             controller: TeleoperatedValues.coralNearL4,
             onTapDecrement: () =>
                 decrementNumber(TeleoperatedValues.coralNearL4),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.coralNearL4)),
-                // coral far l4
+        // coral far l4
         CounterNumberField(
             controller: TeleoperatedValues.coralFarL4,
             onTapDecrement: () =>
                 decrementNumber(TeleoperatedValues.coralFarL4),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.coralFarL4)),
-        //algae removed
+        //algae barge
         CounterNumberField(
             controller: TeleoperatedValues.algaeBarge,
             onTapDecrement: () =>
                 decrementNumber(TeleoperatedValues.algaeBarge),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.algaeBarge)),
-        //algae processor
+        //field crosses
         CounterNumberField(
             controller: TeleoperatedValues.fieldCrosses,
             onTapDecrement: () =>
                 decrementNumber(TeleoperatedValues.fieldCrosses),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.fieldCrosses)),
-                //endgame dropdown
+        //endgame dropdown
         PlatformDropdownMenu(
             dropdownMenuSelectedItem: EndgameValues.endgame.text,
             onChanged: (value) {

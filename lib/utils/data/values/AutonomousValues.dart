@@ -10,7 +10,8 @@ class AutonomousValues {
   static TextEditingController coralField = TextEditingController(text: "0");
   static TextEditingController coralMissed = TextEditingController(text: "0");
   static TextEditingController algaeRemoved = TextEditingController(text: "0");
-  static TextEditingController algaeProcessor = TextEditingController(text: "0");
+  static TextEditingController algaeProcessor =
+      TextEditingController(text: "0");
   static TextEditingController algaeBarge = TextEditingController(text: "0");
 
   // L1 trough sides

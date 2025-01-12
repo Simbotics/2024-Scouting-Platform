@@ -41,6 +41,7 @@ class _TeleoperatedFields3State extends State<TeleoperatedFields3> {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        // coral near l3
         CounterNumberField(
             controller: TeleoperatedValues.coralNearL3,
             onTapDecrement: () =>
@@ -54,15 +55,14 @@ class _TeleoperatedFields3State extends State<TeleoperatedFields3> {
                 decrementNumber(TeleoperatedValues.coralFarL3),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.coralFarL3)),
-                //coral l3 scored
-        // human player misses
+        // algae processor
         CounterNumberField(
             controller: TeleoperatedValues.algaeProcessor,
             onTapDecrement: () =>
                 decrementNumber(TeleoperatedValues.algaeProcessor),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.algaeProcessor)),
-        // field crosses
+        // human player misses
         CounterNumberField(
             controller: TeleoperatedValues.humanPlayerMisses,
             onTapDecrement: () =>

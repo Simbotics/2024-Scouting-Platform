@@ -15,7 +15,7 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        // algae removed
+        // l3 coral near
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -31,7 +31,7 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
-        // algae processor
+        // l3 coral far
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -47,7 +47,8 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
-            Align(
+        // processor
+        Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
@@ -62,7 +63,8 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
-            Align(
+        // human player misses
+        Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
@@ -77,7 +79,8 @@ class _TeleoperatedLabels3State extends State<TeleoperatedLabels3> {
                     fontSize: 15.0),
               ),
             )),
-            Align(
+        // climb time
+        Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,

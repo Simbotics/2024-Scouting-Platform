@@ -160,6 +160,7 @@ class QrcodeHelper {
 
   /// Removes any character that is not a letter, number, whitespace or a special character
   static String stripEmoji(String value) {
-    return value.replaceAll(RegExp("[^A-z0-9.,\\-';/?!()[\\]+=\\s@#\$%&*~]"), '');
+    return value.replaceAll(
+        RegExp("[^A-z0-9.,\\-';/?!()[\\]+=\\s@#\$%&*~]"), '');
   }
 }

@@ -39,7 +39,7 @@ class _TeleoperatedFields2State extends State<TeleoperatedFields2> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // coral far l1
+        // coral near l2
         CounterNumberField(
             controller: TeleoperatedValues.coralNearL2,
             onTapDecrement: () =>

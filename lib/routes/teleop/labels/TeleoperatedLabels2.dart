@@ -15,7 +15,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        // coral l1 far scored
+        // coral l2 near scored
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -47,7 +47,7 @@ class _TeleoperatedLabels2State extends State<TeleoperatedLabels2> {
                     fontSize: 15.0),
               ),
             )),
-        // coral l3 far scored
+        // algae removed
         Align(
             alignment: Alignment.centerLeft,
             child: Container(

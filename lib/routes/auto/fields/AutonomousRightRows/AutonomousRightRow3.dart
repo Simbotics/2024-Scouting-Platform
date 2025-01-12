@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
 import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
+
 class AutonomousRightRow3 extends StatefulWidget {
   const AutonomousRightRow3({
     super.key,

@@ -15,7 +15,7 @@ class _AutonomousRightLabel3State extends State<AutonomousRightLabel3> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        // Auto mobility status
+        // Alage removed
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -30,6 +30,7 @@ class _AutonomousRightLabel3State extends State<AutonomousRightLabel3> {
                     fontSize: 15.0),
               ),
             )),
+        // processor
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -44,6 +45,7 @@ class _AutonomousRightLabel3State extends State<AutonomousRightLabel3> {
                     fontSize: 15.0),
               ),
             )),
+        // barge algae
         Align(
             alignment: Alignment.centerLeft,
             child: Container(

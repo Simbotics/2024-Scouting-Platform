@@ -109,6 +109,7 @@ class _TeleopRouteState extends State<TeleopRoute> {
                       ))),
             ],
           ),
+          // robot info
           Align(
               alignment: Alignment.centerLeft,
               child: Container(

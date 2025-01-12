@@ -99,7 +99,7 @@ class _CommentsFields extends State<CommentsFields> {
                           fontFamily: "Helvetica",
                           color: Colors.white)),
                 ))),
-                Align(
+        Align(
             alignment: Alignment.bottomRight,
             child: Container(
                 padding: const EdgeInsets.only(

@@ -15,7 +15,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        //coral l1
+        //coral l1 near
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -33,7 +33,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //coral l2
+        //coral l1 far
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
