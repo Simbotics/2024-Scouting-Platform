@@ -25,7 +25,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
                 top: 20.0,
               ),
               child: const Text(
-                "Coral L1 Near Scored",
+                "L1 Coral Near",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -40,38 +40,7 @@ class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
               width: 170.0,
               padding: const EdgeInsets.only(left: 20.0, top: 20.0),
               child: const Text(
-                "Coral L2 Near Scored",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-        //coral l3
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
-              child: const Text(
-                "Coral L3 Near Scored",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-        // coral l4
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding:
-                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
-              child: const Text(
-                "Coral L4 Near Scored",
+                "L1 Coral Far",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,

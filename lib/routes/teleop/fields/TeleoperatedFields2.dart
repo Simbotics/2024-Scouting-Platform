@@ -41,11 +41,11 @@ class _TeleoperatedFields2State extends State<TeleoperatedFields2> {
       children: [
         // coral far l1
         CounterNumberField(
-            controller: TeleoperatedValues.coralFarL1,
+            controller: TeleoperatedValues.coralNearL2,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralFarL1),
+                decrementNumber(TeleoperatedValues.coralNearL2),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralFarL1)),
+                incrementNumber(TeleoperatedValues.coralNearL2)),
         // coral far l2
         CounterNumberField(
             controller: TeleoperatedValues.coralFarL2,
@@ -53,27 +53,13 @@ class _TeleoperatedFields2State extends State<TeleoperatedFields2> {
                 decrementNumber(TeleoperatedValues.coralFarL2),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.coralFarL2)),
-        // coral far l3
+        //algae removed
         CounterNumberField(
-            controller: TeleoperatedValues.coralFarL3,
+            controller: TeleoperatedValues.algaeRemoved,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralFarL3),
+                decrementNumber(TeleoperatedValues.algaeRemoved),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralFarL3)),
-        // coral far l4
-        CounterNumberField(
-            controller: TeleoperatedValues.coralFarL4,
-            onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.coralFarL4),
-            onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.coralFarL4)),
-        //algae barge
-        CounterNumberField(
-            controller: TeleoperatedValues.algaeBarge,
-            onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.algaeBarge),
-            onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.algaeBarge)),
+                incrementNumber(TeleoperatedValues.algaeRemoved)),
       ],
     );
   }
