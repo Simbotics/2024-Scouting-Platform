@@ -3,7 +3,11 @@ import 'dart:io';
 
 import 'package:permission_handler/permission_handler.dart';
 import 'package:scouting_platform/utils/data/constants/AppConstants.dart';
+import 'package:scouting_platform/utils/data/values/AutonomousValues.dart';
+import 'package:scouting_platform/utils/data/values/CommentValues.dart';
+import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/SettingValues.dart';
+import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 
 class AppDataHelper {
   // Save the current event ID to a file called "current_event_id.txt"
@@ -31,5 +35,13 @@ class AppDataHelper {
     } else {
       throw Exception('Permission denied');
     }
+  }
+
+  static void resetStates() {
+    AutonomousValues.resetAutoEtcValues();
+    AutonomousValues.resetAutoReef();
+    TeleoperatedValues.resetTeleopValues();
+    EndgameValues.resetEndgameValues();
+    CommentValues.resetComments();
   }
 }

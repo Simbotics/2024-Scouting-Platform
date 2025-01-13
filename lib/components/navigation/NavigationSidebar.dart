@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:scouting_platform/components/navigation/components/SidebarItem.dart';
+import 'package:scouting_platform/routes/auto/AutonomousDataRoute.dart';
 import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
-import 'package:scouting_platform/routes/auto/AutoRoute.dart';
 import 'package:scouting_platform/routes/qrcode/QRCodeRoute.dart';
 import 'package:scouting_platform/routes/settings/SettingsRoute.dart';
 import 'package:scouting_platform/routes/prematch/PrematchRoute.dart';
@@ -35,7 +35,7 @@ class NavigationSidebar extends StatelessWidget {
           const SidebarItem(
               icon: Icon(Icons.auto_awesome),
               itemName: "Auto Data",
-              route: AutoRoute(title: 'Auto Input')),
+              route: AutonomousDataRoute(title: 'Auto Input')),
           const SidebarItem(
               icon: Icon(Icons.gamepad),
               itemName: "Teleop Data",

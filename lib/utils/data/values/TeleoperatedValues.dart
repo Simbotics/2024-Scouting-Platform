@@ -18,4 +18,23 @@ class TeleoperatedValues {
   static TextEditingController humanPlayerMisses =
       TextEditingController(text: "0");
   static TextEditingController fieldCrosses = TextEditingController(text: "0");
+
+
+  static void resetTeleopValues() {
+    TeleoperatedValues.coralNearL1.text = "0";
+    TeleoperatedValues.coralNearL2.text = "0";
+    TeleoperatedValues.coralNearL3.text = "0";
+    TeleoperatedValues.coralNearL4.text = "0";
+    TeleoperatedValues.coralFarL1.text = "0";
+    TeleoperatedValues.coralFarL2.text = "0";
+    TeleoperatedValues.coralFarL3.text = "0";
+    TeleoperatedValues.coralFarL4.text = "0";
+    TeleoperatedValues.coralMissed.text = "0";
+    TeleoperatedValues.algaeRemoved.text = "0";
+    TeleoperatedValues.algaeProcessor.text = "0";
+    TeleoperatedValues.algaeBarge.text = "0";
+    TeleoperatedValues.humanPlayerMisses.text = "0";
+    TeleoperatedValues.fieldCrosses.text = "0";
+  }
+
 }

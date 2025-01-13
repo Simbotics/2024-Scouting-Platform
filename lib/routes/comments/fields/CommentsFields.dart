@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/TextInputField.dart';
 import 'package:scouting_platform/routes/qrcode/QRCodeRoute.dart';
+import 'package:scouting_platform/routes/teleop/TeleopRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/styles/components/TitleStyle.dart';
 import 'package:scouting_platform/utils/data/values/CommentValues.dart';
@@ -93,6 +94,29 @@ class _CommentsFields extends State<CommentsFields> {
                     }));
                   },
                   child: const Text("Current QR Code >",
+                      style: TextStyle(
+                          fontSize: 24.0,
+                          fontFamily: "Helvetica",
+                          color: Colors.white)),
+                ))),
+        Align(
+            alignment: Alignment.bottomRight,
+            child: Container(
+                padding: const EdgeInsets.only(
+                    top: 4.0, right: 40, left: 80.0, bottom: 20.0),
+                height: 80.0,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppStyle
+                        .textInputColorLight, // Set the background color here
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const TeleopRoute(title: "Teleop/Endgame");
+                    }));
+                  },
+                  child: const Text("< Teleop/Endgame",
                       style: TextStyle(
                           fontSize: 24.0,
                           fontFamily: "Helvetica",

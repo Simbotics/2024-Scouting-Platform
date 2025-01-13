@@ -10,4 +10,12 @@ class CommentValues {
       TextEditingController(text: "");
   static final TextEditingController endgameComments =
       TextEditingController(text: "");
+
+  
+  static void resetComments() {
+    CommentValues.autoComments.text = "";
+    CommentValues.autoOrder.text = "";
+    CommentValues.teleopComments.text = "";
+    CommentValues.endgameComments.text = "";
+  }
 }

@@ -1,28 +1,28 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 
-class EndgameLabels extends StatefulWidget {
-  const EndgameLabels({
+class AutonomousRightLabel1 extends StatefulWidget {
+  const AutonomousRightLabel1({
     super.key,
   });
 
   @override
-  State<EndgameLabels> createState() => _EndgameLabelsState();
+  State<AutonomousRightLabel1> createState() => _AutonomousRightLabel1State();
 }
 
-class _EndgameLabelsState extends State<EndgameLabels> {
+class _AutonomousRightLabel1State extends State<AutonomousRightLabel1> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        //climbing
+        // start pos
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
+              width: 150.0,
+              padding: const EdgeInsets.only(top: 20.0, right: 30.0),
               child: const Text(
-                "Endgame",
+                "Start Position",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -30,15 +30,15 @@ class _EndgameLabelsState extends State<EndgameLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //climb time
+        // auto mobility
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              margin: const EdgeInsets.only(left: 55.0),
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 65.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Climb Time",
+                "Mobility",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,

@@ -1,6 +1,8 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/CounterNumberField.dart';
+import 'package:scouting_platform/builders/bases/StopwatchButton.dart';
+import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
 
 class TeleoperatedFields3 extends StatefulWidget {
@@ -39,14 +41,21 @@ class _TeleoperatedFields3State extends State<TeleoperatedFields3> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        //algae removed
+        // coral near l3
         CounterNumberField(
-            controller: TeleoperatedValues.algaeRemoved,
+            controller: TeleoperatedValues.coralNearL3,
             onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.algaeRemoved),
+                decrementNumber(TeleoperatedValues.coralNearL3),
             onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.algaeRemoved)),
-        //algae processor
+                incrementNumber(TeleoperatedValues.coralNearL3)),
+        // coral far l3
+        CounterNumberField(
+            controller: TeleoperatedValues.coralFarL3,
+            onTapDecrement: () =>
+                decrementNumber(TeleoperatedValues.coralFarL3),
+            onTapIncrement: () =>
+                incrementNumber(TeleoperatedValues.coralFarL3)),
+        // algae processor
         CounterNumberField(
             controller: TeleoperatedValues.algaeProcessor,
             onTapDecrement: () =>
@@ -60,13 +69,12 @@ class _TeleoperatedFields3State extends State<TeleoperatedFields3> {
                 decrementNumber(TeleoperatedValues.humanPlayerMisses),
             onTapIncrement: () =>
                 incrementNumber(TeleoperatedValues.humanPlayerMisses)),
-        // field crosses
-        CounterNumberField(
-            controller: TeleoperatedValues.fieldCrosses,
-            onTapDecrement: () =>
-                decrementNumber(TeleoperatedValues.fieldCrosses),
-            onTapIncrement: () =>
-                incrementNumber(TeleoperatedValues.fieldCrosses)),
+        //climb time
+        StopwatchButton(
+          value: EndgameValues.climbTime,
+          state: EndgameValues.stopwatchState,
+          timer: EndgameValues.stopwatch,
+        ),
       ],
     );
   }

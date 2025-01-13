@@ -1,21 +1,36 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 
-class AutonomousLabels extends StatefulWidget {
-  const AutonomousLabels({
+class TeleoperatedLabels4 extends StatefulWidget {
+  const TeleoperatedLabels4({
     super.key,
   });
 
   @override
-  State<AutonomousLabels> createState() => _AutonomousLabelsState();
+  State<TeleoperatedLabels4> createState() => _TeleoperatedLabels4State();
 }
 
-class _AutonomousLabelsState extends State<AutonomousLabels> {
+class _TeleoperatedLabels4State extends State<TeleoperatedLabels4> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        // Auto mobility status
+        //coral l4 near
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              width: 170.0,
+              padding: const EdgeInsets.only(left: 20.0, top: 20.0),
+              child: const Text(
+                "L4 Coral Near",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15.0),
+              ),
+            )),
+        // coral l4 far
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
@@ -23,7 +38,7 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
               padding:
                   const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Mobility",
+                "L4 Coral Far",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -31,15 +46,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //Auto Speaker Scored
+        // algae barge
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              margin: const EdgeInsets.only(left: 50.0),
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Speaker Scored",
+                "Algae Barge",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -47,14 +62,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //auto speaker missed
+        // field crosses
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Speaker Missed",
+                "Field Crosses",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -62,14 +78,15 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //auto amp scored
+        // endgame
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Amp Scored",
+                "Endgame",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -77,22 +94,6 @@ class _AutonomousLabelsState extends State<AutonomousLabels> {
                     fontSize: 15.0),
               ),
             )),
-        //Auto Amp Missed
-        Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 170.0,
-              padding: const EdgeInsets.only(left: 25.0, top: 20.0),
-              child: const Text(
-                "Amp Missed",
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0),
-              ),
-            )),
-
         const Divider(),
       ],
     );
