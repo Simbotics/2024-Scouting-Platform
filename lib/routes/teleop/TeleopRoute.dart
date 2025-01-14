@@ -42,29 +42,12 @@ class _TeleopRouteState extends State<TeleopRoute> {
         physics: const AlwaysScrollableScrollPhysics(),
         child: Column(children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 20, top: 10.0),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(150.0, 40.0),
-                    backgroundColor: AppStyle.textInputColor,
-                  ),
-                  onPressed: () {
-                    showConformationDialog(context);
-                  },
-                  child: const Text("Reset",
-                      style: TextStyle(
-                          fontSize: 14.0,
-                          fontFamily: "Helvetica",
-                          color: Colors.white)),
-                ),
-              ),
               Align(
                   alignment: Alignment.bottomRight,
                   child: Container(
-                      padding: const EdgeInsets.only(top: 4.0, right: 60),
+                      padding: const EdgeInsets.only(top: 4.0, right: 10),
                       // height: 47.0,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(

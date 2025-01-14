@@ -57,7 +57,7 @@ A guide that documents the process of configuring advances parts of the scouting
     - `prematch` - Contains fields for initials, match number, and team number, and automatically selects the team based on the match number and driver station configured in the settings.
     *All inputs on this page feed into the `lib/utils/data/values/PrematchValues.dart` values.*
     - `qrcode` - Contains routes for scanning QR codes and managing related data for creating or saving them.
-    - `settings` - Provides the settings route where users configure event ID, QR code centerfold, team number editability, and other important settings for app functionality.
+    - `settings` - Provides the settings route where users configure event ID, team number editability, and other important settings for app functionality.
     *All inputs on this page feed into the `lib/utils/data/values/SettingValues.dart` values.*
 - `styles` - Contains widgets for easily generating headers and titles, as well as a set of colors used throughout the app to maintain uniformity in the scouting platform.
 - `utils` - Includes utilities like constants, value files, and helpers to support app functionality.

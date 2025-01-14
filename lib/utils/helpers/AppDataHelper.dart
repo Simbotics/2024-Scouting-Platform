@@ -22,6 +22,20 @@ class AppDataHelper {
     }
   }
 
+  static Future<void> saveQRCodeCopy(String data) async {
+    final status = await Permission.storage.request();
+    if (status.isGranted) {
+      final file = File(
+          "/storage/emulated/0/Documents/${AppConstants.defaultEventID}_output.csv");
+      if (!await file.exists()) {
+        await file.create();
+      }
+      await file.writeAsString("$data\n", mode: FileMode.append);
+    } else {
+      throw Exception('Permission denied');
+    }
+  }
+
   // Get the current event ID from a file called "current_event_id.txt"
   static Future<String> getCurrentEventIDAndCurrentDriverStation() async {
     final status = await Permission.storage.request();
