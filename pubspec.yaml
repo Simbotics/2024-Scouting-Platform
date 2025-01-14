@@ -70,17 +70,6 @@ flutter:
     - assets/images/reefscape/karthik-reef-diagram-top-shorter.png
     - assets/images/reefscape/karthik-reef-diagram-middle-compressed.png
     - assets/images/reefscape/karthik-reef-diagram-bottom-shorter.png
-    # QR code centerfolds
-    - assets/images/centerfolds/jqr_code_centerfold.png
-    - assets/images/centerfolds/jimmy_centerfold.png
-    - assets/images/centerfolds/peppa_pig_centerfold.png
-    - assets/images/centerfolds/kiss_motore_centerfold.png
-    - assets/images/centerfolds/bottle_of_wotah_centerfold.png
-    - assets/images/centerfolds/bruh_centerfold.png
-    - assets/images/centerfolds/huh_centerfold.png
-    - assets/images/centerfolds/hungwy_centerfold.png
-    - assets/images/centerfolds/who_did_this_centerfold.png
-    - assets/images/centerfolds/cheese.png
   # Custom fonts specific to team 1114
   fonts:
     - family: "HesDeadJim"

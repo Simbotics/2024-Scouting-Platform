@@ -42,29 +42,12 @@ class _TeleopRouteState extends State<TeleopRoute> {
         physics: const AlwaysScrollableScrollPhysics(),
         child: Column(children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 20, top: 10.0),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(150.0, 40.0),
-                    backgroundColor: AppStyle.textInputColor,
-                  ),
-                  onPressed: () {
-                    showConformationDialog(context);
-                  },
-                  child: const Text("Reset",
-                      style: TextStyle(
-                          fontSize: 14.0,
-                          fontFamily: "Helvetica",
-                          color: Colors.white)),
-                ),
-              ),
               Align(
                   alignment: Alignment.bottomRight,
                   child: Container(
-                      padding: const EdgeInsets.only(top: 4.0, right: 60),
+                      padding: const EdgeInsets.only(top: 4.0, right: 10),
                       // height: 47.0,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
@@ -109,21 +92,6 @@ class _TeleopRouteState extends State<TeleopRoute> {
                       ))),
             ],
           ),
-          // robot info
-          Align(
-              alignment: Alignment.centerLeft,
-              child: Container(
-                width: 400.0,
-                padding: const EdgeInsets.only(top: 20.0, left: 20.0),
-                child: Text(
-                  "Driver Station: ${SettingValues.selectedDriverStation.text}, Match #: ${PrematchValues.matchNumber.text}, Team #: ${PrematchValues.teamNumber.text}",
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15.0),
-                ),
-              )),
           const TeleoperatedLabels4(),
           const TeleoperatedFields4(),
           const TeleoperatedLabels3(),
@@ -132,6 +100,21 @@ class _TeleopRouteState extends State<TeleopRoute> {
           const TeleoperatedFields2(),
           const TeleoperatedLabels(),
           const TeleoperatedFields(),
+          // robot info
+          Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                width: 400.0,
+                padding: const EdgeInsets.only(top: 20.0, left: 20.0),
+                child: Text(
+                  "Driver Station: ${SettingValues.selectedDriverStation.text}, Match #${PrematchValues.matchNumber.text}, Team #${PrematchValues.teamNumber.text}",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15.0),
+                ),
+              )),
         ]),
       ),
     );

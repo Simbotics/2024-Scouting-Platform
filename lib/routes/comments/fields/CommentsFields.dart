@@ -22,9 +22,61 @@ class _CommentsFields extends State<CommentsFields> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const TitleStyle(
-            text: "Auto Comments",
-            padding: EdgeInsets.only(top: 10.0, left: 18.0)),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const TitleStyle(
+                text: "Auto Comments",
+                padding: EdgeInsets.only(top: 10.0, left: 18.0)),
+            Row(children: [
+              Align(
+                  alignment: Alignment.bottomRight,
+                  child: Container(
+                      padding: EdgeInsets.only(right: 10),
+                      height: 30.0,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppStyle
+                              .textInputColorLight, // Set the background color here
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return const TeleopRoute(title: "Teleop/Endgame");
+                          }));
+                        },
+                        child: const Text("< Teleop/Endgame",
+                            style: TextStyle(
+                                fontSize: 12.0,
+                                fontFamily: "Helvetica",
+                                color: Colors.white)),
+                      ))),
+              Align(
+                  alignment: Alignment.bottomRight,
+                  child: Container(
+                      padding: EdgeInsets.only(right: 60),
+                      height: 30.0,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppStyle
+                              .textInputColorLight, // Set the background color here
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return const QRCodeRoute(title: "QR Code");
+                          }));
+                        },
+                        child: const Text("Current QR Code >",
+                            style: TextStyle(
+                                fontSize: 12.0,
+                                fontFamily: "Helvetica",
+                                color: Colors.white)),
+                      ))),
+            ]),
+          ],
+        ),
         TextInputField(
           onChanged: (value) {
             setState(() {
@@ -99,29 +151,6 @@ class _CommentsFields extends State<CommentsFields> {
                           fontFamily: "Helvetica",
                           color: Colors.white)),
                 ))),
-        Align(
-            alignment: Alignment.bottomRight,
-            child: Container(
-                padding: const EdgeInsets.only(
-                    top: 4.0, right: 40, left: 80.0, bottom: 20.0),
-                height: 80.0,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppStyle
-                        .textInputColorLight, // Set the background color here
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return const TeleopRoute(title: "Teleop/Endgame");
-                    }));
-                  },
-                  child: const Text("< Teleop/Endgame",
-                      style: TextStyle(
-                          fontSize: 24.0,
-                          fontFamily: "Helvetica",
-                          color: Colors.white)),
-                )))
       ],
     );
   }
