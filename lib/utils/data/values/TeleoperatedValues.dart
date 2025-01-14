@@ -19,7 +19,6 @@ class TeleoperatedValues {
       TextEditingController(text: "0");
   static TextEditingController fieldCrosses = TextEditingController(text: "0");
 
-
   static void resetTeleopValues() {
     TeleoperatedValues.coralNearL1.text = "0";
     TeleoperatedValues.coralNearL2.text = "0";
@@ -36,5 +35,4 @@ class TeleoperatedValues {
     TeleoperatedValues.humanPlayerMisses.text = "0";
     TeleoperatedValues.fieldCrosses.text = "0";
   }
-
 }

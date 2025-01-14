@@ -67,7 +67,6 @@ class AutonomousValues {
   static TextEditingController l2F = TextEditingController(text: "0");
   static TextEditingController l2G = TextEditingController(text: "0");
 
-
   static void resetAutoEtcValues() {
     AutonomousValues.autoStartPosition.text = "Center";
     AutonomousValues.autoMobility.text = "No";
@@ -130,5 +129,4 @@ class AutonomousValues {
     AutonomousValues.l4K.text = "0";
     AutonomousValues.l4L.text = "0";
   }
-
 }

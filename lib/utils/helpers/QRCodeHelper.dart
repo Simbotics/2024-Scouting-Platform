@@ -9,6 +9,7 @@ import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
 import 'package:scouting_platform/utils/data/values/SettingValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
+import 'package:scouting_platform/utils/helpers/AppDataHelper.dart';
 
 class QrcodeHelper {
   /// Returns a string that represents the contents of the QR code that will be generated and separates them with a "^" character
@@ -27,6 +28,8 @@ class QrcodeHelper {
 
     // Encode to UTF-8 and then base64 to compress size and reduce issues with characters
     List<int> utf8Encoded = utf8.encode(computedValues);
+
+    AppDataHelper.saveQRCodeCopy(computedValues);
 
     return base64.encode(utf8Encoded);
   }
@@ -109,38 +112,37 @@ class QrcodeHelper {
   /// Computes all teleoperated values and returns them as a single string separated by a caret
   static String computeTeleopValues() {
     return computeValues([
-      parseInt(TeleoperatedValues.coralNearL1.text), // index: 55
-      parseInt(TeleoperatedValues.coralNearL2.text), // index: 56
-      parseInt(TeleoperatedValues.coralNearL3.text), // index: 57
-      parseInt(TeleoperatedValues.coralNearL4.text), // index: 58
-      parseInt(TeleoperatedValues.coralFarL1.text), // index: 59
-      parseInt(TeleoperatedValues.coralFarL2.text), // index: 60
-      parseInt(TeleoperatedValues.coralFarL3.text), // index: 61
-      parseInt(TeleoperatedValues.coralFarL4.text), // index: 62
-      parseInt(TeleoperatedValues.coralMissed.text), // index: 63
-      parseInt(TeleoperatedValues.algaeRemoved.text), // index: 64
-      parseInt(TeleoperatedValues.algaeProcessor.text), // index: 65
-      parseInt(TeleoperatedValues.algaeBarge.text), // index: 66
-      parseInt(TeleoperatedValues.humanPlayerMisses.text), // index: 67
-      parseInt(TeleoperatedValues.fieldCrosses.text), // index: 68
+      parseInt(TeleoperatedValues.coralNearL1.text), // index: 46
+      parseInt(TeleoperatedValues.coralNearL2.text), // index: 47
+      parseInt(TeleoperatedValues.coralNearL3.text), // index: 48
+      parseInt(TeleoperatedValues.coralNearL4.text), // index: 49
+      parseInt(TeleoperatedValues.coralFarL1.text), // index: 50
+      parseInt(TeleoperatedValues.coralFarL2.text), // index: 51
+      parseInt(TeleoperatedValues.coralFarL3.text), // index: 52
+      parseInt(TeleoperatedValues.coralFarL4.text), // index: 53
+      parseInt(TeleoperatedValues.coralMissed.text), // index: 54
+      parseInt(TeleoperatedValues.algaeRemoved.text), // index: 55
+      parseInt(TeleoperatedValues.algaeProcessor.text), // index: 56
+      parseInt(TeleoperatedValues.algaeBarge.text), // index: 57
+      parseInt(TeleoperatedValues.humanPlayerMisses.text), // index: 58
+      parseInt(TeleoperatedValues.fieldCrosses.text), // index: 59
     ]);
   }
 
   /// Computes all endgame values and returns them as a single string separated by a caret
   static String computeEndgameValues() {
     return computeValues([
-      parseString(EndgameValues.endgame.text), // index: 69
-      parseString(EndgameValues.climbTime.text), // index: 70
+      parseString(EndgameValues.endgame.text), // index: 60
+      parseString(EndgameValues.climbTime.text), // index: 61
     ]);
   }
 
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      parseString(stripEmoji(CommentValues.autoComments.text)), // index: 71
-      parseString(stripEmoji(CommentValues.autoOrder.text)), // index: 72
-      parseString(stripEmoji(CommentValues.teleopComments.text)), // index: 73
-      parseString(stripEmoji(CommentValues.endgameComments.text)) // index: 74
+      parseString(stripEmoji(CommentValues.autoComments.text)), // index: 62
+      parseString(stripEmoji(CommentValues.teleopComments.text)), // index: 63
+      parseString(stripEmoji(CommentValues.endgameComments.text)) // index: 64
     ]);
   }
 
@@ -149,7 +151,7 @@ class QrcodeHelper {
     return computeValues([
       parseString(OptionConstants.availableDriverstations
           .indexOf(SettingValues.selectedDriverStation.text)
-          .toString()) // index: 75
+          .toString()) // index: 65
     ]);
   }
 

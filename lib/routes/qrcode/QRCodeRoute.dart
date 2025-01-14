@@ -117,3 +117,4 @@ class _QRCodeRouteState extends State<QRCodeRoute> {
     );
   }
 }
+

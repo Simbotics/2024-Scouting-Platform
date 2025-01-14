@@ -138,25 +138,6 @@ class _SettingsRoute extends State<SettingsRoute> {
                     Column(
                       children: [
                         const TitleStyle(
-                            text: "QR Code Centerfold",
-                            padding: EdgeInsets.only(left: 30, top: 10)),
-                        PlatformDropdownMenu(
-                            margin: const EdgeInsets.only(top: 10, right: 30),
-                            selectedItemFontSize: 10.0,
-                            dropdownMenuSelectedItem:
-                                SettingValues.currentSelectedCenterfold.text,
-                            onChanged: (value) {
-                              setState(() {
-                                SettingValues.currentSelectedCenterfold.text =
-                                    value;
-                              });
-                            },
-                            dropdownItems: OptionConstants.centerfolds),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        const TitleStyle(
                             text: "Team Number Editable",
                             padding: EdgeInsets.only(left: 30, top: 10)),
                         PlatformDropdownMenu(
