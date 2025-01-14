@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, file_names
+// ignore_for_file: prefer_const_constructors, file_names, library_private_types_in_public_api
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/PlatformRoute.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -34,12 +34,6 @@ class _QRCodeRouteState extends State<QRCodeRoute> {
               child: QrImageView(
                 data: QrcodeHelper.getQRCodeString(),
                 backgroundColor: Colors.white,
-                embeddedImage:
-                    SettingValues.currentSelectedCenterfold.text == "none"
-                        ? null
-                        : AssetImage(
-                            "assets/images/centerfolds/${SettingValues.currentSelectedCenterfold.text}.png",
-                          ),
                 errorCorrectionLevel: QrErrorCorrectLevel.L,
                 version: QrVersions.auto,
               ),
