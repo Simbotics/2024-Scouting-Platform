@@ -107,25 +107,6 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                             )),
                         SizedBox(width: 8.0),
 
-                        // reset button
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            minimumSize: const Size(150.0, 37.0),
-                            backgroundColor: AppStyle.textInputColor,
-                          ),
-                          onPressed: () {
-                            showConformationDialog(context);
-                          },
-                          child: const Text(
-                            "Reset",
-                            style: TextStyle(
-                              fontSize: 16.0,
-                              fontFamily: "Helvetica",
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-
                         const SizedBox(width: 8.0),
 
                         // next page button
@@ -180,58 +161,6 @@ class _DataRouteState extends State<AutonomousDataRoute> {
           ),
         ),
       ),
-    );
-  }
-
-  void showConformationDialog(BuildContext context) {
-    Widget cancelButton = TextButton(
-      child: const Text("No"),
-      onPressed: () {
-        Navigator.of(context, rootNavigator: true).pop('dialog');
-      },
-    );
-    Widget continueButton = TextButton(
-      child: const Text("Yes"),
-      onPressed: () {
-        if (PrematchValues.matchNumber.text != "") {
-          PrematchValues.matchNumber.text =
-              (int.parse(PrematchValues.matchNumber.text) + 1).toString();
-        } else {
-          PrematchValues.matchNumber.text = (2).toString();
-        }
-
-        if (SettingValues.isTeamNumberReadOnly) {
-          Schedulehelper.getTeamNumberFromSchedule(
-            int.parse(PrematchValues.matchNumber.text),
-          ).then((teamNumber) =>
-              PrematchValues.teamNumber.text = teamNumber.toString());
-        }
-
-        setState(() {
-          AppDataHelper.resetStates();
-        });
-        Navigator.of(context, rootNavigator: true).pop('dialog');
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const PrematchRoute(title: "Prematch Data");
-        }));
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: const Text("Confirmation: Reset ALL Fields"),
-      content: const Text(
-          "Would you like to reset all of the fields currently inputted?"),
-      actions: [
-        cancelButton,
-        continueButton,
-      ],
-    );
-
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alert;
-      },
     );
   }
 }
