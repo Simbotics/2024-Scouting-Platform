@@ -33,7 +33,7 @@ class _CommentsFields extends State<CommentsFields> {
               Align(
                   alignment: Alignment.bottomRight,
                   child: Container(
-                    padding: EdgeInsets.only(right: 10),
+                      padding: EdgeInsets.only(right: 10),
                       height: 30.0,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
@@ -55,7 +55,7 @@ class _CommentsFields extends State<CommentsFields> {
               Align(
                   alignment: Alignment.bottomRight,
                   child: Container(
-                    padding: EdgeInsets.only(right: 60),
+                      padding: EdgeInsets.only(right: 60),
                       height: 30.0,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(

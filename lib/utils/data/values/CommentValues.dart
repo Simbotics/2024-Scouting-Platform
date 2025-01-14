@@ -9,7 +9,6 @@ class CommentValues {
   static final TextEditingController endgameComments =
       TextEditingController(text: "");
 
-  
   static void resetComments() {
     CommentValues.autoComments.text = "";
     CommentValues.teleopComments.text = "";

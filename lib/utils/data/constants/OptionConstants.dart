@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 class OptionConstants {
-
   static final yesNoOptions = ["Yes", "No"];
 
   static final startPositions = ["Left", "Center", "Right"];
