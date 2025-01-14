@@ -149,7 +149,7 @@ class QrcodeHelper {
     return computeValues([
       parseString(OptionConstants.availableDriverstations
           .indexOf(SettingValues.selectedDriverStation.text)
-          .toString()) // index: 66
+          .toString()) // index: 75
     ]);
   }
 
