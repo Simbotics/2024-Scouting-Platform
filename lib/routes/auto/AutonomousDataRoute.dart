@@ -88,7 +88,6 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                             style: ElevatedButton.styleFrom(
                               minimumSize: const Size(150.0, 37.0),
                               backgroundColor: AppStyle.textInputColor,
-                              padding: const EdgeInsets.all(15),
                             ),
                             onPressed: () {
                               Navigator.push(context,
@@ -113,7 +112,6 @@ class _DataRouteState extends State<AutonomousDataRoute> {
                           style: ElevatedButton.styleFrom(
                             minimumSize: const Size(150.0, 37.0),
                             backgroundColor: AppStyle.textInputColor,
-                            padding: const EdgeInsets.all(15),
                           ),
                           onPressed: () {
                             Navigator.push(context,

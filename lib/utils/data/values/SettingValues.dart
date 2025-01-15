@@ -16,6 +16,6 @@ class SettingValues {
 
   /// Gets the saving spreadhseet name based on the current filename
   static String getCurrentSavingSpreadsheetName() {
-    return "${eventID.text}.csv";
+    return "${fileName.text}.csv";
   }
 }

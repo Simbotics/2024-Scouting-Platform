@@ -10,7 +10,6 @@ import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
 import 'package:scouting_platform/utils/helpers/AppDataHelper.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
-import 'package:scouting_platform/routes/comments/CommentsRoute.dart';
 
 class QRCodeRoute extends StatefulWidget {
   const QRCodeRoute({super.key, required this.title});
@@ -41,36 +40,11 @@ class _QRCodeRouteState extends State<QRCodeRoute> {
             ),
           ),
           Positioned(
-            top: 5.0,
-            left: 5.0,
+            top: 16.0,
+            right: 16.0,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(150.0, 37.0),
-                padding: EdgeInsets.all(15.0),
-                backgroundColor: AppStyle.textInputColor,
-              ),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const CommentsRoute(title: "Comments");
-                }));
-              },
-              child: const Text(
-                "< Comments",
-                style: TextStyle(
-                  fontSize: 16.0,
-                  fontFamily: "Helvetica",
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            top: 5.0,
-            right: 5.0,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size(150.0, 37.0),
-                padding: EdgeInsets.all(15.0),
                 backgroundColor: AppStyle.textInputColor,
               ),
               onPressed: () {
@@ -143,3 +117,4 @@ class _QRCodeRouteState extends State<QRCodeRoute> {
     );
   }
 }
+
