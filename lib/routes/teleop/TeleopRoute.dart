@@ -91,10 +91,10 @@ class _TeleopRouteState extends State<TeleopRoute> {
           const TeleoperatedLabels(),
           const TeleoperatedFields(),
           Align(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.bottomRight,
             child: Container(
               width: 400.0,
-              padding: const EdgeInsets.only(top: 20.0, left: 20.0),
+              padding: const EdgeInsets.only(top: 55.0, left: 90.0),
               child: Text(
                 "Driver Station: ${SettingValues.selectedDriverStation.text}, Match #${PrematchValues.matchNumber.text}, Team #${PrematchValues.teamNumber.text}",
                 textAlign: TextAlign.left,
