@@ -31,6 +31,7 @@ class _TeleopRouteState extends State<TeleopRoute> {
     UIHelper.setBrightness(0.3);
   }
 
+  @override
   Widget build(BuildContext context) {
     return PlatformRoute(
       title: widget.title,
