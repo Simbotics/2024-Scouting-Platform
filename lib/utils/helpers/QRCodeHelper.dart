@@ -48,76 +48,77 @@ class QrcodeHelper {
   static String computeAutonomousValues() {
     return computeValues([
       // other
-      parseString(AutonomousValues.autoStartPosition.text), // index 5
-      parseString(AutonomousValues.autoMobility.text), // index 6
-      parseInt(AutonomousValues.coralMissed.text), // index 7
-      parseInt(AutonomousValues.coralField.text), // index 8
-      parseInt(AutonomousValues.coralHP.text), // index 9
-      parseInt(AutonomousValues.algaeRemoved.text), // index 10
-      parseInt(AutonomousValues.algaeProcessor.text), // index 11
-      parseInt(AutonomousValues.algaeBarge.text), // index 12
+      parseString(AutonomousValues.autoStartPosition.text), // index 4
+      parseString(AutonomousValues.autoMobility.text), // index 5
+      parseInt(AutonomousValues.coralMissed.text), // index 6
+      parseInt(AutonomousValues.coralField.text), // index 7
+      parseInt(AutonomousValues.coralHP.text), // index 8
+      parseInt(AutonomousValues.algaeRemoved.text), // index 9
+      parseInt(AutonomousValues.algaeProcessor.text), // index 10
+      parseInt(AutonomousValues.algaeBarge.text), // index 11
 
       // L1 Coral Values
-      parseInt(AutonomousValues.l1NW.text), // index 13
-      parseInt(AutonomousValues.l1NE.text), // index 14
-      parseInt(AutonomousValues.l1W.text), // index 15
-      parseInt(AutonomousValues.l1E.text), // index 16
-      parseInt(AutonomousValues.l1SW.text), // index 17
-      parseInt(AutonomousValues.l1SE.text), // index 18
+      parseInt(AutonomousValues.l1NW.text), // index 12
+      parseInt(AutonomousValues.l1NE.text), // index 13
+      parseInt(AutonomousValues.l1W.text), // index 14
+      parseInt(AutonomousValues.l1E.text), // index 15
+      parseInt(AutonomousValues.l1SW.text), // index 16
+      parseInt(AutonomousValues.l1SE.text), // index 17
 
       // L2 Coral Values
-      parseInt(AutonomousValues.l2A.text), // index 19
-      parseInt(AutonomousValues.l2B.text), // index 20
-      parseInt(AutonomousValues.l2C.text), // index 21
-      parseInt(AutonomousValues.l2D.text), // index 22
-      parseInt(AutonomousValues.l2E.text), // index 23
-      parseInt(AutonomousValues.l2F.text), // index 24
-      parseInt(AutonomousValues.l2G.text), // index 25
-      parseInt(AutonomousValues.l2H.text), // index 26
-      parseInt(AutonomousValues.l2I.text), // index 27
-      parseInt(AutonomousValues.l2J.text), // index 28
-      parseInt(AutonomousValues.l2K.text), // index 29
-      parseInt(AutonomousValues.l2L.text), // index 30
+      parseInt(AutonomousValues.l2A.text), // index 18
+      parseInt(AutonomousValues.l2B.text), // index 19
+      parseInt(AutonomousValues.l2C.text), // index 20
+      parseInt(AutonomousValues.l2D.text), // index 21
+      parseInt(AutonomousValues.l2E.text), // index 22
+      parseInt(AutonomousValues.l2F.text), // index 23
+      parseInt(AutonomousValues.l2G.text), // index 24
+      parseInt(AutonomousValues.l2H.text), // index 25
+      parseInt(AutonomousValues.l2I.text), // index 26
+      parseInt(AutonomousValues.l2J.text), // index 27
+      parseInt(AutonomousValues.l2K.text), // index 28
+      parseInt(AutonomousValues.l2L.text), // index 29
 
       // L3 Coral Values
-      parseInt(AutonomousValues.l3A.text), // index 31
-      parseInt(AutonomousValues.l3B.text), // index 32
-      parseInt(AutonomousValues.l3C.text), // index 33
-      parseInt(AutonomousValues.l3D.text), // index 34
-      parseInt(AutonomousValues.l3E.text), // index 35
-      parseInt(AutonomousValues.l3F.text), // index 36
-      parseInt(AutonomousValues.l3G.text), // index 37
-      parseInt(AutonomousValues.l3H.text), // index 38
-      parseInt(AutonomousValues.l3I.text), // index 39
-      parseInt(AutonomousValues.l3J.text), // index 40
-      parseInt(AutonomousValues.l3K.text), // index 41
-      parseInt(AutonomousValues.l3L.text), // index 42
+      parseInt(AutonomousValues.l3A.text), // index 30
+      parseInt(AutonomousValues.l3B.text), // index 31
+      parseInt(AutonomousValues.l3C.text), // index 32
+      parseInt(AutonomousValues.l3D.text), // index 33
+      parseInt(AutonomousValues.l3E.text), // index 34
+      parseInt(AutonomousValues.l3F.text), // index 35
+      parseInt(AutonomousValues.l3G.text), // index 36
+      parseInt(AutonomousValues.l3H.text), // index 37
+      parseInt(AutonomousValues.l3I.text), // index 38
+      parseInt(AutonomousValues.l3J.text), // index 39
+      parseInt(AutonomousValues.l3K.text), // index 40
+      parseInt(AutonomousValues.l3L.text), // index 41
 
       // L4 Coral Values
-      parseInt(AutonomousValues.l3A.text), // index 43
-      parseInt(AutonomousValues.l3B.text), // index 44
-      parseInt(AutonomousValues.l3C.text), // index 45
-      parseInt(AutonomousValues.l3D.text), // index 46
-      parseInt(AutonomousValues.l3E.text), // index 47
-      parseInt(AutonomousValues.l3F.text), // index 48
-      parseInt(AutonomousValues.l3G.text), // index 49
-      parseInt(AutonomousValues.l3H.text), // index 50
-      parseInt(AutonomousValues.l3I.text), // index 51
-      parseInt(AutonomousValues.l3J.text), // index 52
-      parseInt(AutonomousValues.l3K.text), // index 53
-      parseInt(AutonomousValues.l3L.text), // index 54
+      parseInt(AutonomousValues.l3A.text), // index 42
+      parseInt(AutonomousValues.l3B.text), // index 43
+      parseInt(AutonomousValues.l3C.text), // index 44
+      parseInt(AutonomousValues.l3D.text), // index 45
+      parseInt(AutonomousValues.l3E.text), // index 46
+      parseInt(AutonomousValues.l3F.text), // index 47
+      parseInt(AutonomousValues.l3G.text), // index 48
+      parseInt(AutonomousValues.l3H.text), // index 49
+      parseInt(AutonomousValues.l3I.text), // index 50
+      parseInt(AutonomousValues.l3J.text), // index 51
+      parseInt(AutonomousValues.l3K.text), // index 52
+      parseInt(AutonomousValues.l3L.text), // index 53
     ]);
   }
 
   /// Computes all teleoperated values and returns them as a single string separated by a caret
   static String computeTeleopValues() {
     return computeValues([
-      parseInt(TeleoperatedValues.coralNearL1.text), // index 55
-      parseInt(TeleoperatedValues.coralFarL1.text), // index 56
-      parseInt(TeleoperatedValues.coralNearL2.text), // index 57
-      parseInt(TeleoperatedValues.coralFarL2.text), // index 58
-      parseInt(TeleoperatedValues.coralNearL3.text), // index 59
-      parseInt(TeleoperatedValues.coralNearL3.text), // index 60
+      parseInt(TeleoperatedValues.coralNearL1.text), // index 54
+      parseInt(TeleoperatedValues.coralFarL1.text), // index 55
+      parseInt(TeleoperatedValues.coralNearL2.text), // index 56
+      parseInt(TeleoperatedValues.coralFarL2.text), // index 57
+      parseInt(TeleoperatedValues.coralNearL3.text), // index 58
+      parseInt(TeleoperatedValues.coralFarL3.text), // index 59
+      parseInt(TeleoperatedValues.coralNearL4.text), // index 60
       parseInt(TeleoperatedValues.coralFarL4.text), // index 61
       parseInt(TeleoperatedValues.coralMissed.text), // index: 62
       parseInt(TeleoperatedValues.algaeRemoved.text), // index: 63
