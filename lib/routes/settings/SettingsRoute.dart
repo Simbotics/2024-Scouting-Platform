@@ -116,47 +116,6 @@ class _SettingsRoute extends State<SettingsRoute> {
                     Column(
                       children: [
                         const TitleStyle(
-                            text: "File Name",
-                            padding: EdgeInsets.only(left: 30, top: 10)),
-                        TextInputField(
-                          onChanged: (value) {
-                            setState(() {
-                              SettingValues.fileName.text = value;
-                            });
-                          },
-                          textAlign: TextAlign.left,
-                          hintText: "File Name",
-                          controller: SettingValues.fileName,
-                          margin: const EdgeInsets.only(left: 45, top: 10),
-                        ),
-                      ],
-                    )
-                  ],
-                ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        const TitleStyle(
-                            text: "QR Code Centerfold",
-                            padding: EdgeInsets.only(left: 30, top: 10)),
-                        PlatformDropdownMenu(
-                            margin: const EdgeInsets.only(top: 10, right: 30),
-                            selectedItemFontSize: 10.0,
-                            dropdownMenuSelectedItem:
-                                SettingValues.currentSelectedCenterfold.text,
-                            onChanged: (value) {
-                              setState(() {
-                                SettingValues.currentSelectedCenterfold.text =
-                                    value;
-                              });
-                            },
-                            dropdownItems: OptionConstants.centerfolds),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        const TitleStyle(
                             text: "Team Number Editable",
                             padding: EdgeInsets.only(left: 30, top: 10)),
                         PlatformDropdownMenu(
@@ -180,7 +139,7 @@ class _SettingsRoute extends State<SettingsRoute> {
                       ],
                     )
                   ],
-                )
+                ),
               ],
             )));
   }

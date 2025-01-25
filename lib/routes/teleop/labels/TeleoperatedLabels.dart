@@ -1,30 +1,31 @@
 // ignore_for_file: file_names
-import 'package:scouting_platform/styles/AppStyle.dart';
-import 'package:scouting_platform/routes/auto/AutonomousDataRoute.dart';
 import 'package:flutter/material.dart';
 
-class PrematchLabels extends StatefulWidget {
-  const PrematchLabels({
+class TeleoperatedLabels extends StatefulWidget {
+  const TeleoperatedLabels({
     super.key,
   });
 
   @override
-  State<PrematchLabels> createState() => _PrematchLabelsState();
+  State<TeleoperatedLabels> createState() => _TeleoperatedLabelsState();
 }
 
-class _PrematchLabelsState extends State<PrematchLabels> {
+class _TeleoperatedLabelsState extends State<TeleoperatedLabels> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        // Auto mobility status
+        //coral l1 near
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 20.0, top: 20.0, right: 5.0),
+              padding: const EdgeInsets.only(
+                left: 20.0,
+                top: 20.0,
+              ),
               child: const Text(
-                "Initials",
+                "L1 Coral Near",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -32,15 +33,14 @@ class _PrematchLabelsState extends State<PrematchLabels> {
                     fontSize: 15.0),
               ),
             )),
-        // Match number
+        //coral l1 far
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              margin: const EdgeInsets.only(left: 20.0),
               padding: const EdgeInsets.only(left: 20.0, top: 20.0),
               child: const Text(
-                "Match Number",
+                "L1 Coral Far",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -48,14 +48,15 @@ class _PrematchLabelsState extends State<PrematchLabels> {
                     fontSize: 15.0),
               ),
             )),
-        // team number
+        // coral missed
         Align(
             alignment: Alignment.centerLeft,
             child: Container(
               width: 170.0,
-              padding: const EdgeInsets.only(left: 40.0, top: 20.0),
+              padding:
+                  const EdgeInsets.only(left: 20.0, top: 20.0, right: 30.0),
               child: const Text(
-                "Team Number",
+                "Coral Missed",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.white,
@@ -63,24 +64,7 @@ class _PrematchLabelsState extends State<PrematchLabels> {
                     fontSize: 15.0),
               ),
             )),
-        const SizedBox(width: 598.0),
-        Container(
-          padding: const EdgeInsets.all(5.0),
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              minimumSize: const Size(150.0, 37.0),
-              padding: const EdgeInsets.all(15),
-              backgroundColor: AppStyle.textInputColor,
-            ),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const AutonomousDataRoute(title: "Auto");
-              }));
-            },
-            child: const Text("Auto >",
-                style: TextStyle(fontSize: 16.0, color: Colors.white)),
-          ),
-        )
+        const Divider(),
       ],
     );
   }

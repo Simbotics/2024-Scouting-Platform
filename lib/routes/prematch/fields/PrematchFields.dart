@@ -2,8 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/NumberInputField.dart';
 import 'package:scouting_platform/builders/bases/TextInputField.dart';
-import 'package:scouting_platform/routes/data/DataRoute.dart';
-import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/utils/helpers/AppDataHelper.dart';
 import 'package:scouting_platform/utils/helpers/ScheduleHelper.dart';
 import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
@@ -140,29 +138,6 @@ class _PrematchFieldsState extends State<PrematchFields> {
           controller: PrematchValues.teamNumber,
           hintText: "Team Number",
         ),
-        Align(
-            alignment: Alignment.bottomRight,
-            child: Container(
-                padding:
-                    const EdgeInsets.only(top: 4.0, right: 13, left: 100.0),
-                height: 47.0,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppStyle
-                        .textInputColor, // Set the background color here
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return const DataRoute(title: "Data Input");
-                    }));
-                  },
-                  child: const Text("Auto/Teleop >",
-                      style: TextStyle(
-                          fontSize: 16.0,
-                          fontFamily: "Helvetica",
-                          color: Colors.white)),
-                )))
       ],
     );
   }

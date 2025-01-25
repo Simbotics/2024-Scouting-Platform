@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:scouting_platform/builders/bases/TextInputField.dart';
 import 'package:scouting_platform/routes/qrcode/QRCodeRoute.dart';
+import 'package:scouting_platform/routes/teleop/TeleopRoute.dart';
 import 'package:scouting_platform/styles/AppStyle.dart';
 import 'package:scouting_platform/styles/components/TitleStyle.dart';
 import 'package:scouting_platform/utils/data/values/CommentValues.dart';
@@ -21,9 +22,59 @@ class _CommentsFields extends State<CommentsFields> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const TitleStyle(
-            text: "Auto Comments",
-            padding: EdgeInsets.only(top: 10.0, left: 18.0)),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const TitleStyle(
+                text: "Auto Comments",
+                padding: EdgeInsets.only(top: 10.0, left: 18.0)),
+            Row(children: [
+              Align(
+                  alignment: Alignment.bottomRight,
+                  child: Container(
+                    padding: const EdgeInsets.all(3.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(150.0, 37.0),
+                        padding: const EdgeInsets.all(15),
+                        backgroundColor: AppStyle.textInputColor,
+                      ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return const TeleopRoute(title: "Teleop");
+                        }));
+                      },
+                      child: const Text("< Teleop",
+                          style:
+                              TextStyle(fontSize: 16.0, color: Colors.white)),
+                    ),
+                  )),
+              Align(
+                  alignment: Alignment.bottomRight,
+                  child: Container(
+                    padding: const EdgeInsets.all(3.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(150.0, 37.0),
+                        padding: const EdgeInsets.all(15),
+                        backgroundColor: AppStyle.textInputColor,
+                      ),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return const QRCodeRoute(title: "QR Code");
+                        }));
+                      },
+                      child: const Text("Current QR Code >",
+                          style:
+                              TextStyle(fontSize: 16.0, color: Colors.white)),
+                    ),
+                  )),
+            ]),
+          ],
+        ),
         TextInputField(
           onChanged: (value) {
             setState(() {
@@ -37,24 +88,6 @@ class _CommentsFields extends State<CommentsFields> {
           margin: const EdgeInsets.only(left: 18, top: 10),
           width: 880,
           height: 90.0,
-          maxLines: 10,
-        ),
-        const TitleStyle(
-            text: "Auto Note Order",
-            padding: EdgeInsets.only(top: 10.0, left: 18.0)),
-        TextInputField(
-          onChanged: (value) {
-            setState(() {
-              CommentValues.autoOrder.text = value;
-            });
-          },
-          textAlign: TextAlign.left,
-          hintText:
-              "1, 2, 3, 4, 5. One being the top of the field from your point of view and five being the bottom",
-          controller: CommentValues.autoOrder,
-          margin: const EdgeInsets.only(left: 18, top: 10),
-          width: 880,
-          height: 45.0,
           maxLines: 10,
         ),
         const TitleStyle(
@@ -93,29 +126,6 @@ class _CommentsFields extends State<CommentsFields> {
           height: 90.0,
           maxLines: 10,
         ),
-        Align(
-            alignment: Alignment.bottomRight,
-            child: Container(
-                padding: const EdgeInsets.only(
-                    top: 4.0, right: 40, left: 80.0, bottom: 20.0),
-                height: 80.0,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppStyle
-                        .textInputColorLight, // Set the background color here
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return const QRCodeRoute(title: "QR Code");
-                    }));
-                  },
-                  child: const Text("Current QR Code >",
-                      style: TextStyle(
-                          fontSize: 24.0,
-                          fontFamily: "Helvetica",
-                          color: Colors.white)),
-                )))
       ],
     );
   }

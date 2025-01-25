@@ -10,5 +10,12 @@ class EndgameValues {
 
   static TextEditingController endgame = TextEditingController(text: "No");
   static TextEditingController climbTime = TextEditingController(text: "0");
-  static TextEditingController trap = TextEditingController(text: "0");
+
+  static void resetEndgameValues() {
+    EndgameValues.endgame.text = "No"; // was climb, now endgame
+    EndgameValues.climbTime.text = "0"; // parked was below
+    EndgameValues.stopwatchState.text = "0";
+    EndgameValues.stopwatch.stop();
+    EndgameValues.stopwatch.reset();
+  }
 }

@@ -3,7 +3,7 @@ description: A scouting platform app designed to track FRC robot performance.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -30,17 +30,14 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   qr_flutter: ^4.1.0
-  mobile_scanner: ^6.0.1
   csv: ^6.0.0
   screen_brightness: ^2.0.0+1
   http: ^1.0.0
   permission_handler: ^11.3.0
-  remove_emoji: ^0.0.8
   path_provider: ^2.1.4
 
 dev_dependencies:
@@ -65,21 +62,14 @@ flutter_launcher_icons:
 # The following section is specific to Flutter.
 flutter:
   assets:
-  # App icons, banners, and logos
+    # App icons, banners, and logos
     - assets/images/app_icon.png
     - assets/images/nav_banner.png
     - assets/images/simbotics_logo.png
-  # QR code centerfolds
-    - assets/images/centerfolds/jqr_code_centerfold.png
-    - assets/images/centerfolds/jimmy_centerfold.png
-    - assets/images/centerfolds/peppa_pig_centerfold.png
-    - assets/images/centerfolds/kiss_motore_centerfold.png
-    - assets/images/centerfolds/bottle_of_wotah_centerfold.png
-    - assets/images/centerfolds/bruh_centerfold.png
-    - assets/images/centerfolds/huh_centerfold.png
-    - assets/images/centerfolds/hungwy_centerfold.png
-    - assets/images/centerfolds/who_did_this_centerfold.png
-    - assets/images/centerfolds/cheese.png
+    # Reefscape diagram
+    - assets/images/reefscape/karthik-reef-diagram-top-shorter.png
+    - assets/images/reefscape/karthik-reef-diagram-middle-compressed.png
+    - assets/images/reefscape/karthik-reef-diagram-bottom-shorter.png
   # Custom fonts specific to team 1114
   fonts:
     - family: "HesDeadJim"
