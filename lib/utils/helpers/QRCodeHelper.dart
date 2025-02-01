@@ -94,18 +94,18 @@ class QrcodeHelper {
       parseInt(AutonomousValues.l3L.text), // index 41
 
       // L4 Coral Values
-      parseInt(AutonomousValues.l3A.text), // index 42
-      parseInt(AutonomousValues.l3B.text), // index 43
-      parseInt(AutonomousValues.l3C.text), // index 44
-      parseInt(AutonomousValues.l3D.text), // index 45
-      parseInt(AutonomousValues.l3E.text), // index 46
-      parseInt(AutonomousValues.l3F.text), // index 47
-      parseInt(AutonomousValues.l3G.text), // index 48
-      parseInt(AutonomousValues.l3H.text), // index 49
-      parseInt(AutonomousValues.l3I.text), // index 50
-      parseInt(AutonomousValues.l3J.text), // index 51
-      parseInt(AutonomousValues.l3K.text), // index 52
-      parseInt(AutonomousValues.l3L.text), // index 53
+      parseInt(AutonomousValues.l4A.text), // index 42
+      parseInt(AutonomousValues.l4B.text), // index 43
+      parseInt(AutonomousValues.l4C.text), // index 44
+      parseInt(AutonomousValues.l4D.text), // index 45
+      parseInt(AutonomousValues.l4E.text), // index 46
+      parseInt(AutonomousValues.l4F.text), // index 47
+      parseInt(AutonomousValues.l4G.text), // index 48
+      parseInt(AutonomousValues.l4H.text), // index 49
+      parseInt(AutonomousValues.l4I.text), // index 50
+      parseInt(AutonomousValues.l4J.text), // index 51
+      parseInt(AutonomousValues.l4K.text), // index 52
+      parseInt(AutonomousValues.l4L.text), // index 53
     ]);
   }
 
