@@ -9,6 +9,7 @@ import 'package:scouting_platform/utils/data/values/EndgameValues.dart';
 import 'package:scouting_platform/utils/data/values/PrematchValues.dart';
 import 'package:scouting_platform/utils/data/values/SettingValues.dart';
 import 'package:scouting_platform/utils/data/values/TeleoperatedValues.dart';
+import 'package:scouting_platform/utils/helpers/AppDataHelper.dart';
 
 class QrcodeHelper {
   /// Returns a string that represents the contents of the QR code that will be generated and separates them with a "^" character
@@ -28,6 +29,8 @@ class QrcodeHelper {
     // Encode to UTF-8 and then base64 to compress size and reduce issues with characters
     List<int> utf8Encoded = utf8.encode(computedValues);
 
+    AppDataHelper.saveQRCodeCopy(computedValues);
+
     return base64.encode(utf8Encoded);
   }
 
@@ -44,41 +47,102 @@ class QrcodeHelper {
   /// Computes all autonomous values and returns them as a single string separated by a caret
   static String computeAutonomousValues() {
     return computeValues([
-      parseInt(AutonomousValues.autoSpeakerScored.text), // index: 4
-      parseInt(AutonomousValues.autoSpeakerMissed.text), // index: 5
-      parseInt(AutonomousValues.autoAmpScored.text), // index: 6
-      parseInt(AutonomousValues.autoAmpMissed.text), // index: 7
-      parseString(AutonomousValues.autoMobility.text) // index: 8
+      // other
+      parseString(AutonomousValues.autoStartPosition.text), // index 4
+      parseString(AutonomousValues.autoMobility.text), // index 5
+      parseInt(AutonomousValues.coralMissed.text), // index 6
+      parseInt(AutonomousValues.coralField.text), // index 7
+      parseInt(AutonomousValues.coralHP.text), // index 8
+      parseInt(AutonomousValues.algaeRemoved.text), // index 9
+      parseInt(AutonomousValues.algaeProcessor.text), // index 10
+      parseInt(AutonomousValues.algaeBarge.text), // index 11
+
+      // L1 Coral Values
+      parseInt(AutonomousValues.l1NW.text), // index 12
+      parseInt(AutonomousValues.l1NE.text), // index 13
+      parseInt(AutonomousValues.l1W.text), // index 14
+      parseInt(AutonomousValues.l1E.text), // index 15
+      parseInt(AutonomousValues.l1SW.text), // index 16
+      parseInt(AutonomousValues.l1SE.text), // index 17
+
+      // L2 Coral Values
+      parseInt(AutonomousValues.l2A.text), // index 18
+      parseInt(AutonomousValues.l2B.text), // index 19
+      parseInt(AutonomousValues.l2C.text), // index 20
+      parseInt(AutonomousValues.l2D.text), // index 21
+      parseInt(AutonomousValues.l2E.text), // index 22
+      parseInt(AutonomousValues.l2F.text), // index 23
+      parseInt(AutonomousValues.l2G.text), // index 24
+      parseInt(AutonomousValues.l2H.text), // index 25
+      parseInt(AutonomousValues.l2I.text), // index 26
+      parseInt(AutonomousValues.l2J.text), // index 27
+      parseInt(AutonomousValues.l2K.text), // index 28
+      parseInt(AutonomousValues.l2L.text), // index 29
+
+      // L3 Coral Values
+      parseInt(AutonomousValues.l3A.text), // index 30
+      parseInt(AutonomousValues.l3B.text), // index 31
+      parseInt(AutonomousValues.l3C.text), // index 32
+      parseInt(AutonomousValues.l3D.text), // index 33
+      parseInt(AutonomousValues.l3E.text), // index 34
+      parseInt(AutonomousValues.l3F.text), // index 35
+      parseInt(AutonomousValues.l3G.text), // index 36
+      parseInt(AutonomousValues.l3H.text), // index 37
+      parseInt(AutonomousValues.l3I.text), // index 38
+      parseInt(AutonomousValues.l3J.text), // index 39
+      parseInt(AutonomousValues.l3K.text), // index 40
+      parseInt(AutonomousValues.l3L.text), // index 41
+
+      // L4 Coral Values
+      parseInt(AutonomousValues.l4A.text), // index 42
+      parseInt(AutonomousValues.l4B.text), // index 43
+      parseInt(AutonomousValues.l4C.text), // index 44
+      parseInt(AutonomousValues.l4D.text), // index 45
+      parseInt(AutonomousValues.l4E.text), // index 46
+      parseInt(AutonomousValues.l4F.text), // index 47
+      parseInt(AutonomousValues.l4G.text), // index 48
+      parseInt(AutonomousValues.l4H.text), // index 49
+      parseInt(AutonomousValues.l4I.text), // index 50
+      parseInt(AutonomousValues.l4J.text), // index 51
+      parseInt(AutonomousValues.l4K.text), // index 52
+      parseInt(AutonomousValues.l4L.text), // index 53
     ]);
   }
 
   /// Computes all teleoperated values and returns them as a single string separated by a caret
   static String computeTeleopValues() {
     return computeValues([
-      parseInt(TeleoperatedValues.speaker.text), // index: 9
-      parseInt(TeleoperatedValues.speakerMissed.text), // index: 10
-      parseInt(TeleoperatedValues.amp.text), // index: 11
-      parseInt(TeleoperatedValues.ampMissed.text), // index: 12
-      parseInt(TeleoperatedValues.passes.text) // index: 13
+      parseInt(TeleoperatedValues.coralNearL1.text), // index 54
+      parseInt(TeleoperatedValues.coralFarL1.text), // index 55
+      parseInt(TeleoperatedValues.coralNearL2.text), // index 56
+      parseInt(TeleoperatedValues.coralFarL2.text), // index 57
+      parseInt(TeleoperatedValues.coralNearL3.text), // index 58
+      parseInt(TeleoperatedValues.coralFarL3.text), // index 59
+      parseInt(TeleoperatedValues.coralNearL4.text), // index 60
+      parseInt(TeleoperatedValues.coralFarL4.text), // index 61
+      parseInt(TeleoperatedValues.coralMissed.text), // index: 62
+      parseInt(TeleoperatedValues.algaeRemoved.text), // index: 63
+      parseInt(TeleoperatedValues.algaeProcessor.text), // index: 64
+      parseInt(TeleoperatedValues.algaeBarge.text), // index: 65
+      parseInt(TeleoperatedValues.humanPlayerMisses.text), // index: 66
+      parseInt(TeleoperatedValues.fieldCrosses.text), // index: 67
     ]);
   }
 
   /// Computes all endgame values and returns them as a single string separated by a caret
   static String computeEndgameValues() {
     return computeValues([
-      parseString(EndgameValues.endgame.text), // index: 14
-      parseString(EndgameValues.climbTime.text), // index: 15
-      parseInt(EndgameValues.trap.text) // index: 16
+      parseString(EndgameValues.endgame.text), // index: 68
+      parseString(EndgameValues.climbTime.text), // index: 69
     ]);
   }
 
   /// Computes all comment values and returns them as a single string separated by a caret
   static String computeCommentValues() {
     return computeValues([
-      parseString(CommentValues.autoComments.text), // index: 17
-      parseString(CommentValues.autoOrder.text), // index: 18
-      parseString(CommentValues.teleopComments.text), // index: 19
-      parseString(CommentValues.endgameComments.text) // index: 20
+      parseString(stripEmoji(CommentValues.autoComments.text)), // index: 70
+      parseString(stripEmoji(CommentValues.teleopComments.text)), // index: 71
+      parseString(stripEmoji(CommentValues.endgameComments.text)) // index: 72
     ]);
   }
 
@@ -87,7 +151,7 @@ class QrcodeHelper {
     return computeValues([
       parseString(OptionConstants.availableDriverstations
           .indexOf(SettingValues.selectedDriverStation.text)
-          .toString()) // index: 21
+          .toString()) // index: 73
     ]);
   }
 
@@ -104,5 +168,11 @@ class QrcodeHelper {
   /// Parses an integer and returns it as a string, if the integer is null then it returns "0"
   static String parseInt(String value) {
     return (int.tryParse(value) ?? 0).toString();
+  }
+
+  /// Removes any character that is not a letter, number, whitespace or a special character
+  static String stripEmoji(String value) {
+    return value.replaceAll(
+        RegExp("[^A-z0-9.,\\-';/?!()[\\]+=\\s@#\$%&*~]"), '');
   }
 }
