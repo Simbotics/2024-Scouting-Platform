@@ -75,6 +75,6 @@ class _StopwatchButtonState extends State<StopwatchButton> {
     String seconds = ((milli ~/ 1000) % 60).toString().padLeft(2, "0");
     String minutes = ((milli ~/ 1000) ~/ 60).toString().padLeft(1, "0");
 
-    return "$minutes:$seconds:$milliseconds";
+    return milli.toString();
   }
 }
